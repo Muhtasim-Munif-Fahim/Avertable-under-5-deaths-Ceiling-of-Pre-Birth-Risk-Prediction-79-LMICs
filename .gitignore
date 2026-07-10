@@ -1,0 +1,46 @@
+# --- HARD BLOCK: individual-level microdata must never enter this repo ---
+*.parquet
+*.dta
+*.sav
+*.zsav
+*.feather
+*.npy
+*.npz
+data/raw/
+data/00_raw/
+data/01_parquet/
+data/02_harmonized/
+data/logs/
+MICS Data/
+
+# --- HARD BLOCK: paper / LaTeX / manuscript / figure artifacts stay out ---
+*.tex
+*.pdf
+*.docx
+output/figures/
+output/tables/journal_main/
+output/tables/journal_supp/
+output/checklists/
+src/figures_journal/
+src/synthesis/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Logs, temp, archives
+*.log
+tmp/
+*.zip

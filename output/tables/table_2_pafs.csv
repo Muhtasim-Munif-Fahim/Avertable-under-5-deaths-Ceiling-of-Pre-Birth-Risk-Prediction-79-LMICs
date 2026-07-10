@@ -1,0 +1,9 @@
+risk_factor,variable,aOR,prev_ECA,PAF_ECA,prev_LAC,PAF_LAC,prev_MENA,PAF_MENA,prev_SSA,PAF_SSA,prev_SSEA,PAF_SSEA,prev_All,PAF_All
+Male child,child_male,1.146,52.1,7.1,51.0,6.9,51.6,7.0,50.9,6.9,52.2,7.1,51.5,7.0
+Multiple birth,multiple_birth,3.857,1.8,5.0,1.7,4.6,2.9,7.6,3.2,8.5,1.4,4.0,2.3,6.1
+High parity (4+),birth_order,1.143,12.9,1.8,24.2,3.3,31.5,4.3,37.1,5.0,19.0,2.6,27.2,3.7
+Adolescent mother (<20),maternal_age_at_birth,1.591,10.8,6.0,24.8,12.8,15.2,8.3,22.7,11.8,21.6,11.3,21.8,11.4
+No education,edu_level,1.695,0.9,0.6,13.0,8.3,28.2,16.4,48.9,25.4,40.6,22.0,39.7,21.6
+Not married,currently_married,1.115,6.8,0.8,18.8,2.1,5.6,0.6,13.5,1.5,5.8,0.7,10.1,1.2
+Poorest quintile,wealth_quintile,1.458,21.6,9.0,22.8,9.5,21.9,9.1,22.4,9.3,22.8,9.5,22.6,9.4
+Rural residence,urban,1.427,60.4,20.5,42.6,15.4,44.1,15.9,70.8,23.2,70.3,23.1,66.0,22.0

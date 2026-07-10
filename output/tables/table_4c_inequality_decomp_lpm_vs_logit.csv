@@ -1,0 +1,10 @@
+Group,Factor,Percent_LPM,Percent_Logit,Delta_pp
+All LMICs (2000-2024),Education,49.43,60.75,11.32
+All LMICs (2000-2024),Residence,22.24,24.61,2.37
+All LMICs (2000-2024),Birth order,15.6,11.01,-4.59
+All LMICs (2000-2024),Birth interval,-4.25,-0.18,4.07
+All LMICs (2000-2024),Maternal age,2.52,2.3,-0.22
+All LMICs (2000-2024),Marital status,-0.16,-0.17,-0.01
+All LMICs (2000-2024),Child sex,-0.11,-0.13,-0.02
+All LMICs (2000-2024),Birth type,-0.69,-0.4,0.29
+All LMICs (2000-2024),Decade trend,-0.2,-0.17,0.03

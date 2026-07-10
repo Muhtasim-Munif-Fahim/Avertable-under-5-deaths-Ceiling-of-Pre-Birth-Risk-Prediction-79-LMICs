@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived aggregate data, please cite it as below."
+title: "Global Under-5 Mortality Risk Stratification — analysis code and derived data (79 LMICs, DHS/MICS 2000–2024)"
+type: software
+authors:
+  - family-names: Fahim
+    given-names: Md Muhtasim Munif
+    affiliation: "Data Science Research Lab, Department of Statistics, University of Rajshahi, Bangladesh"
+  - family-names: Huq
+    given-names: M. Monimul
+    affiliation: "Department of Statistics, University of Rajshahi, Bangladesh"
+  - family-names: Sabiruzzaman
+    given-names: M.
+    affiliation: "Department of Statistics, University of Rajshahi, Bangladesh"
+  - family-names: Karim
+    given-names: Md Rezaul
+    affiliation: "Department of Statistics, University of Rajshahi, Bangladesh"
+repository-code: "https://github.com/Muhtasim-Munif-Fahim/Child_PVT"
+license: MIT
+version: 1.0.0
+date-released: 2026-07-10
+preferred-citation:
+  type: article
+  title: "Avertable under-5 deaths and the ceiling of pre-birth risk prediction in 79 low-income and middle-income countries: a harmonised DHS and MICS analysis"
+  authors:
+    - family-names: Fahim
+      given-names: Md Muhtasim Munif
+    - family-names: Huq
+      given-names: M. Monimul
+    - family-names: Sabiruzzaman
+      given-names: M.
+    - family-names: Karim
+      given-names: Md Rezaul
+  journal: "The Lancet Global Health"
+  year: 2026
+  notes: "Submitted; citation details to be updated on publication."

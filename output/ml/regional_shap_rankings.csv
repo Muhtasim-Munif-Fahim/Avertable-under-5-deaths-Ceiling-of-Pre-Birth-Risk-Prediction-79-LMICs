@@ -1,0 +1,41 @@
+Region,Feature,Mean_abs_SHAP
+SSA,Male Child,0.061647
+SSA,Multiple Birth,0.102396
+SSA,Birth Order,0.173968
+SSA,Birth Interval (mo),0.291943
+SSA,Maternal Age,0.175927
+SSA,Maternal Education,0.250553
+SSA,Married,0.017474
+SSA,Wealth Quintile,0.069491
+SSA,Urban Residence,0.062242
+SSA,Household Members,0.176763
+SSEA,Male Child,0.065785
+SSEA,Multiple Birth,0.080822
+SSEA,Birth Order,0.193311
+SSEA,Birth Interval (mo),0.261497
+SSEA,Maternal Age,0.150279
+SSEA,Maternal Education,0.355834
+SSEA,Married,0.011597
+SSEA,Wealth Quintile,0.075024
+SSEA,Urban Residence,0.058827
+SSEA,Household Members,0.163694
+LAC,Male Child,0.071884
+LAC,Multiple Birth,0.085025
+LAC,Birth Order,0.188511
+LAC,Birth Interval (mo),0.279539
+LAC,Maternal Age,0.156884
+LAC,Maternal Education,0.334395
+LAC,Married,0.020112
+LAC,Wealth Quintile,0.080215
+LAC,Urban Residence,0.092102
+LAC,Household Members,0.179924
+MENA,Male Child,0.069326
+MENA,Multiple Birth,0.105243
+MENA,Birth Order,0.1866
+MENA,Birth Interval (mo),0.298266
+MENA,Maternal Age,0.168574
+MENA,Maternal Education,0.397309
+MENA,Married,0.012286
+MENA,Wealth Quintile,0.111914
+MENA,Urban Residence,0.092153
+MENA,Household Members,0.150875

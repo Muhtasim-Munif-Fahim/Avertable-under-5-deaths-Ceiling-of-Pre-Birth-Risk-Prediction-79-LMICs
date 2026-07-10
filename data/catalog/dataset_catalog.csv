@@ -1,0 +1,345 @@
+folder_name,country_code,effective_country,file_type,phase_raw,dhs_phase,suffix,country_name,who_region,is_subnational,dta_found,n_rows,n_cols,file_size_mb,survey_year,column_names_sample,has_v005,has_b5,has_b7
+AFBR71DT,AF,AF,BR,71,7,DT,Afghanistan,SSEA,False,True,125715.0,1187.0,153.5,1394.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ALBR51DT,AL,AL,BR,51,5,DT,Albania,ECA,False,True,12766.0,1181.0,16.8,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ALBR71DT,AL,AL,BR,71,7,DT,Albania,ECA,False,True,16128.0,1280.0,23.7,2018.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+AMBR42DT,AM,AM,BR,42,4,DT,Armenia,ECA,False,True,11286.0,1078.0,13.5,2000.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+AMBR54DT,AM,AM,BR,54,5,DT,Armenia,ECA,False,True,10297.0,1652.0,18.8,2005.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+AMBR61DT,AM,AM,BR,61,6,DT,Armenia,ECA,False,True,8424.0,1027.0,9.8,2010.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+AMBR72DT,AM,AM,BR,72,7,DT,Armenia,ECA,False,True,8771.0,1234.0,12.2,2016.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+AOBR71DT,AO,AO,BR,71,7,DT,Angola,SSA,False,True,42002.0,1160.0,52.3,2016.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+AOBR81DT,AO,AO,BR,81,8,DT,Angola,SSA,False,True,37767.0,1467.0,58.4,2023.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+APBR42DT,AP,IA,BR,42,4,DT,India,SSEA,True,True,10933.0,951.0,11.4,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ARBR42DT,AR,IA,BR,42,4,DT,India,SSEA,True,True,3219.0,951.0,3.5,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ASBR42DT,AS,IA,BR,42,4,DT,India,SSEA,True,True,9893.0,951.0,10.3,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+AZBR52DT,AZ,AZ,BR,52,5,DT,Azerbaijan,ECA,False,True,13565.0,1184.0,18.3,2006.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BDBR31DT,BD,BD,BR,31,3,DT,Bangladesh,SSEA,False,True,32590.0,607.0,20.9,94.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BDBR3ADT,BD,BD,BR,3A,3,DT,Bangladesh,SSEA,False,True,29366.0,712.0,22.8,96.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BDBR41DT,BD,BD,BR,41,4,DT,Bangladesh,SSEA,False,True,31925.0,880.0,30.2,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BDBR4JDT,BD,BD,BR,4J,4,DT,Bangladesh,SSEA,False,True,33605.0,1139.0,40.4,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BDBR51DT,BD,BD,BR,51,5,DT,Bangladesh,SSEA,False,True,30527.0,1087.0,35.5,2007.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BDBR61DT,BD,BD,BR,61,6,DT,Bangladesh,SSEA,False,True,45844.0,1052.0,52.0,2011.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BDBR72DT,BD,BD,BR,72,7,DT,Bangladesh,SSEA,False,True,43772.0,1159.0,54.0,2014.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BDBR7RDT,BD,BD,BR,7R,7,DT,Bangladesh,SSEA,False,True,47828.0,1227.0,63.8,2017.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BDBR81DT,BD,BD,BR,81,8,DT,Bangladesh,SSEA,False,True,64722.0,1238.0,83.8,2022.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BFBR21DT,BF,BF,BR,21,2,DT,Burkina Faso,SSA,False,True,20655.0,682.0,15.4,92.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BFBR31DT,BF,BF,BR,31,3,DT,Burkina Faso,SSA,False,True,22145.0,794.0,21.9,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BFBR43DT,BF,BF,BR,43,4,DT,Burkina Faso,SSA,False,True,41520.0,992.0,44.5,2003.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BFBR62DT,BF,BF,BR,62,6,DT,Burkina Faso,SSA,False,True,56178.0,1027.0,63.8,2010.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BFBR81DT,BF,BF,BR,81,8,DT,Burkina Faso,SSA,False,True,48745.0,1138.0,59.8,2021.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BHBR42DT,BH,IA,BR,42,4,DT,India,SSEA,True,True,23056.0,951.0,23.8,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BJBR31DT,BJ,BJ,BR,31,3,DT,Benin,SSA,False,True,19359.0,614.0,13.4,96.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BJBR41DT,BJ,BJ,BR,41,4,DT,Benin,SSA,False,True,19398.0,926.0,19.6,2001.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BJBR51DT,BJ,BJ,BR,51,5,DT,Benin,SSA,False,True,57232.0,1261.0,76.3,2006.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BJBR61DT,BJ,BJ,BR,61,6,DT,Benin,SSA,False,True,47152.0,1106.0,57.7,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BJBR71DT,BJ,BJ,BR,71,7,DT,Benin,SSA,False,True,45853.0,1188.0,60.1,2018.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BOBR01DT,BO,BO,BR,01,0,DT,Bolivia,LAC,False,True,22338.0,517.0,12.7,89.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BOBR31DT,BO,BO,BR,31,3,DT,Bolivia,LAC,False,True,24174.0,681.0,18.3,94.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BOBR3BDT,BO,BO,BR,3B,3,DT,Bolivia,LAC,False,True,29473.0,828.0,27.1,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BOBR41DT,BO,BO,BR,41,4,DT,Bolivia,LAC,False,True,45116.0,1195.0,57.1,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BOBR51DT,BO,BO,BR,51,5,DT,Bolivia,LAC,False,True,40355.0,1449.0,61.7,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BRBR01DT,BR,BR,BR,01,0,DT,Brazil,LAC,False,True,12356.0,462.0,6.3,86.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BRBR21DT,BR,BR,BR,21,2,DT,Brazil,LAC,False,True,15363.0,669.0,11.0,91.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BRBR31DT,BR,BR,BR,31,3,DT,Brazil,LAC,False,True,25513.0,754.0,21.4,96.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BUBR01DT,BU,BU,BR,01,0,DT,Burundi,SSA,False,True,11886.0,429.0,5.6,87.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BUBR61DT,BU,BU,BR,61,6,DT,Burundi,SSA,False,True,24520.0,936.0,25.0,2010.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+BUBR71DT,BU,BU,BR,71,7,DT,Burundi,SSA,False,True,45419.0,1136.0,56.4,2016.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CDBR51DT,CD,CD,BR,51,5,DT,DR Congo,SSA,False,True,29548.0,1082.0,34.4,2007.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CDBR61DT,CD,CD,BR,61,6,DT,DR Congo,SSA,False,True,59276.0,999.0,63.6,2014.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CDBR81DT,CD,CD,BR,81,8,DT,DR Congo,SSA,False,True,80890.0,1194.0,103.2,2023.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CFBR31DT,CF,CF,BR,31,3,DT,Central African Republic,SSA,False,True,16936.0,794.0,14.9,94.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CGBR51DT,CG,CG,BR,51,5,DT,Congo,SSA,False,True,16687.0,1129.0,20.2,2005.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CGBR61DT,CG,CG,BR,61,6,DT,Congo,SSA,False,True,31948.0,1110.0,38.1,2011.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CIBR35DT,CI,CI,BR,35,3,DT,Cote d'Ivoire,SSA,False,True,24870.0,682.0,18.6,94.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CIBR3ADT,CI,CI,BR,3A,3,DT,Cote d'Ivoire,SSA,False,True,7575.0,702.0,6.1,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CIBR62DT,CI,CI,BR,62,6,DT,Cote d'Ivoire,SSA,False,True,28211.0,1053.0,32.0,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CIBR81DT,CI,CI,BR,81,8,DT,Cote d'Ivoire,SSA,False,True,39979.0,1164.0,50.0,2021.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CMBR22DT,CM,CM,BR,22,2,DT,Cameroon,SSA,False,True,11612.0,645.0,8.1,91.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CMBR31DT,CM,CM,BR,31,3,DT,Cameroon,SSA,False,True,15187.0,669.0,11.3,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CMBR44DT,CM,CM,BR,44,4,DT,Cameroon,SSA,False,True,29455.0,951.0,30.3,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CMBR61DT,CM,CM,BR,61,6,DT,Cameroon,SSA,False,True,42312.0,1062.0,48.3,2011.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+CMBR71DT,CM,CM,BR,71,7,DT,Cameroon,SSA,False,True,33988.0,1212.0,45.3,2018.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+COBR01DT,CO,CO,BR,01,0,DT,Colombia,LAC,False,True,11622.0,370.0,4.9,86.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+COBR22DT,CO,CO,BR,22,2,DT,Colombia,LAC,False,True,15976.0,662.0,11.2,90.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+COBR31DT,CO,CO,BR,31,3,DT,Colombia,LAC,False,True,21830.0,687.0,19.1,95.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+COBR41DT,CO,CO,BR,41,4,DT,Colombia,LAC,False,True,21267.0,983.0,22.6,2000.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+COBR53DT,CO,CO,BR,53,5,DT,Colombia,LAC,False,True,71278.0,1385.0,103.3,2005.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+COBR61DT,CO,CO,BR,61,6,DT,Colombia,LAC,False,True,91399.0,1710.0,161.4,2010.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+COBR72DT,CO,CO,BR,72,7,DT,Colombia,LAC,False,True,62593.0,1649.0,104.8,2015.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+DLBR42DT,DL,IA,BR,42,4,DT,India,SSEA,True,True,6837.0,951.0,7.2,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+DRBR01DT,DR,DR,BR,01,0,DT,Dominican Republic,LAC,False,True,20151.0,374.0,8.4,86.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+DRBR21DT,DR,DR,BR,21,2,DT,Dominican Republic,LAC,False,True,17168.0,708.0,13.5,91.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+DRBR32DT,DR,DR,BR,32,3,DT,Dominican Republic,LAC,False,True,19784.0,821.0,17.9,96.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+DRBR41DT,DR,DR,BR,41,4,DT,Dominican Republic,LAC,False,True,2871.0,836.0,2.7,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+DRBR4BDT,DR,DR,BR,4B,4,DT,Dominican Republic,LAC,False,True,53667.0,920.0,52.5,2002.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+DRBR52DT,DR,DR,BR,52,5,DT,Dominican Republic,LAC,False,True,58037.0,960.0,59.4,2007.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+DRBR5ADT,DR,DR,BR,5A,5,DT,Dominican Republic,LAC,False,True,4385.0,941.0,4.6,2007.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+DRBR61DT,DR,DR,BR,61,6,DT,Dominican Republic,LAC,False,True,18167.0,1078.0,21.1,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+DRBR6ADT,DR,DR,BR,6A,6,DT,Dominican Republic,LAC,False,True,4313.0,1078.0,5.2,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ECBR01DT,EC,EC,BR,01,0,DT,Ecuador,LAC,False,True,11835.0,384.0,4.9,87.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+EGBR01DT,EG,EG,BR,01,0,DT,Egypt,MENA,False,True,35519.0,614.0,23.3,88.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+EGBR21DT,EG,EG,BR,21,2,DT,Egypt,MENA,False,True,38076.0,750.0,31.4,92.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+EGBR33DT,EG,EG,BR,33,3,DT,Egypt,MENA,False,True,56381.0,1013.0,65.0,95.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+EGBR42DT,EG,EG,BR,42,4,DT,Egypt,MENA,False,True,54780.0,1094.0,68.8,2000.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+EGBR4ADT,EG,EG,BR,4A,4,DT,Egypt,MENA,False,True,30298.0,1128.0,38.1,2003.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+EGBR51DT,EG,EG,BR,51,5,DT,Egypt,MENA,False,True,61455.0,1633.0,107.4,2005.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+EGBR5ADT,EG,EG,BR,5A,5,DT,Egypt,MENA,False,True,48619.0,1217.0,66.0,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+EGBR61DT,EG,EG,BR,61,6,DT,Egypt,MENA,False,True,59266.0,1084.0,70.2,2014.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ESBR01DT,ES,ES,BR,01,0,DT,El Salvador,LAC,False,True,6383.0,400.0,2.8,85.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ETBR41DT,ET,ET,BR,41,4,DT,Ethiopia,SSA,False,True,44174.0,881.0,42.6,1992.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ETBR51DT,ET,ET,BR,51,5,DT,Ethiopia,SSA,False,True,39881.0,1225.0,64.4,1997.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ETBR61DT,ET,ET,BR,61,6,DT,Ethiopia,SSA,False,True,45540.0,928.0,46.0,2003.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ETBR71DT,ET,ET,BR,71,7,DT,Ethiopia,SSA,False,True,41392.0,1287.0,57.7,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ETBR81DT,ET,ET,BR,81,8,DT,Ethiopia,SSA,False,True,23007.0,1072.0,26.5,2011.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GABR41DT,GA,GA,BR,41,4,DT,Gabon,SSA,False,True,16878.0,936.0,17.1,0.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GABR61DT,GA,GA,BR,61,6,DT,Gabon,SSA,False,True,23109.0,1057.0,26.6,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GABR71DT,GA,GA,BR,71,7,DT,Gabon,SSA,False,True,23232.0,1231.0,31.6,2020.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GHBR02DT,GH,GH,BR,02,0,DT,Ghana,SSA,False,True,14216.0,413.0,6.4,88.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GHBR31DT,GH,GH,BR,31,3,DT,Ghana,SSA,False,True,13298.0,639.0,9.6,93.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GHBR41DT,GH,GH,BR,41,4,DT,Ghana,SSA,False,True,13188.0,925.0,13.6,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GHBR4BDT,GH,GH,BR,4B,4,DT,Ghana,SSA,False,True,15086.0,935.0,15.4,2003.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GHBR5ADT,GH,GH,BR,5A,5,DT,Ghana,SSA,False,True,11888.0,1009.0,13.2,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GHBR72DT,GH,GH,BR,72,7,DT,Ghana,SSA,False,True,23118.0,1158.0,29.0,2014.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GHBR8CDT,GH,GH,BR,8C,8,DT,Ghana,SSA,False,True,34663.0,1251.0,46.2,2022.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GJBR42DT,GJ,IA,BR,42,4,DT,India,SSEA,True,True,10993.0,951.0,11.4,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GMBR61DT,GM,GM,BR,61,6,DT,Gambia,SSA,False,True,26601.0,1000.0,29.9,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GMBR81DT,GM,GM,BR,81,8,DT,Gambia,SSA,False,True,31665.0,1253.0,42.8,2019.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GNBR41DT,GN,GN,BR,41,4,DT,Guinea,SSA,False,True,22943.0,835.0,21.2,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GNBR52DT,GN,GN,BR,52,5,DT,Guinea,SSA,False,True,27115.0,1102.0,31.9,2005.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GNBR62DT,GN,GN,BR,62,6,DT,Guinea,SSA,False,True,27683.0,1000.0,30.0,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GNBR71DT,GN,GN,BR,71,7,DT,Guinea,SSA,False,True,28887.0,1169.0,36.7,2018.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GOBR42DT,GO,IA,BR,42,4,DT,India,SSEA,True,True,2878.0,951.0,3.1,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GUBR01DT,GU,GU,BR,01,0,DT,Guatemala,LAC,False,True,14698.0,448.0,7.3,87.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GUBR34DT,GU,GU,BR,34,3,DT,Guatemala,LAC,False,True,38753.0,764.0,33.9,95.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GUBR41DT,GU,GU,BR,41,4,DT,Guatemala,LAC,False,True,18581.0,847.0,17.5,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GUBR71DT,GU,GU,BR,71,7,DT,Guatemala,LAC,False,True,55398.0,1236.0,73.0,2015.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+GYBR5IDT,GY,GY,BR,5I,5,DT,Guyana,LAC,False,True,10929.0,1129.0,13.8,2009.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+HNBR52DT,HN,HN,BR,52,5,DT,Honduras,LAC,False,True,50093.0,1144.0,61.9,2006.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+HNBR62DT,HN,HN,BR,62,6,DT,Honduras,LAC,False,True,49263.0,1151.0,62.4,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+HPBR42DT,HP,IA,BR,42,4,DT,India,SSEA,True,True,8007.0,951.0,8.4,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+HRBR42DT,HR,IA,BR,42,4,DT,India,SSEA,True,True,8781.0,951.0,9.2,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+HTBR31DT,HT,HT,BR,31,3,DT,Haiti,LAC,False,True,12547.0,791.0,10.9,94.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+HTBR42DT,HT,HT,BR,42,4,DT,Haiti,LAC,False,True,26437.0,948.0,27.4,2000.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+HTBR52DT,HT,HT,BR,52,5,DT,Haiti,LAC,False,True,24830.0,1024.0,27.6,2006.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+HTBR61DT,HT,HT,BR,61,6,DT,Haiti,LAC,False,True,29013.0,1020.0,31.9,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+HTBR71DT,HT,HT,BR,71,7,DT,Haiti,LAC,False,True,27809.0,1216.0,37.0,2017.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IABR23DT,IA,IA,BR,23,2,DT,India,SSEA,False,True,275172.0,694.0,207.5,92.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IABR42DT,IA,IA,BR,42,4,DT,India,SSEA,False,True,268879.0,967.0,289.0,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IABR52DT,IA,IA,BR,52,5,DT,India,SSEA,False,True,256782.0,1175.0,330.8,2006.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IABR74DT,IA,IA,BR,74,7,DT,India,SSEA,False,True,1315617.0,1340.0,1913.7,2015.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IABR7EDT,IA,IA,BR,7E,7,DT,India,SSEA,False,True,1274250.0,1644.0,2305.7,2019.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IDBR01DT,ID,ID,BR,01,0,DT,Indonesia,SSEA,False,True,39719.0,389.0,16.8,87.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IDBR21DT,ID,ID,BR,21,2,DT,Indonesia,SSEA,False,True,74329.0,669.0,53.0,91.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IDBR31DT,ID,ID,BR,31,3,DT,Indonesia,SSEA,False,True,90326.0,764.0,73.4,94.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IDBR3ADT,ID,ID,BR,3A,3,DT,Indonesia,SSEA,False,True,86276.0,765.0,70.6,97.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IDBR42DT,ID,ID,BR,42,4,DT,Indonesia,SSEA,False,True,79791.0,974.0,81.5,2002.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IDBR51DT,ID,ID,BR,51,5,DT,Indonesia,SSEA,False,True,84726.0,1346.0,116.5,2007.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IDBR63DT,ID,ID,BR,63,6,DT,Indonesia,SSEA,False,True,83650.0,1136.0,97.8,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+IDBR71DT,ID,ID,BR,71,7,DT,Indonesia,SSEA,False,True,86265.0,1678.0,148.0,2017.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+JMBR42DT,JM,IA,BR,42,4,DT,India,SSEA,True,True,9196.0,951.0,9.6,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+JOBR21DT,JO,JO,BR,21,2,DT,Jordan,MENA,False,True,32812.0,661.0,23.8,90.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+JOBR31DT,JO,JO,BR,31,3,DT,Jordan,MENA,False,True,24243.0,716.0,19.9,97.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+JOBR42DT,JO,JO,BR,42,4,DT,Jordan,MENA,False,True,25296.0,878.0,24.5,2002.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+JOBR51DT,JO,JO,BR,51,5,DT,Jordan,MENA,False,True,43460.0,1140.0,54.1,2007.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+JOBR61DT,JO,JO,BR,61,6,DT,Jordan,MENA,False,True,38199.0,862.0,35.9,2009.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+JOBR6CDT,JO,JO,BR,6C,6,DT,Jordan,MENA,False,True,42275.0,1130.0,52.3,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+JOBR74DT,JO,JO,BR,74,7,DT,Jordan,MENA,False,True,47040.0,1102.0,56.2,2017.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+JOBR81DT,JO,JO,BR,81,8,DT,Jordan,MENA,False,True,42962.0,1340.0,61.7,2023.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KABR42DT,KA,IA,BR,42,4,DT,India,SSEA,True,True,12215.0,951.0,12.7,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KEBR03DT,KE,IA,BR,03,0,DT,India,SSEA,True,True,25173.0,413.0,10.9,89.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KEBR33DT,KE,IA,BR,33,3,DT,India,SSEA,True,True,23899.0,611.0,16.1,93.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KEBR3ADT,KE,IA,BR,3A,3,DT,India,SSEA,True,True,23351.0,645.0,19.4,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KEBR42DT,KE,IA,BR,42,4,DT,India,SSEA,True,True,22074.0,943.0,22.4,2003.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KEBR52DT,KE,IA,BR,52,5,DT,India,SSEA,True,True,22534.0,1044.0,25.6,2009.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KEBR72DT,KE,IA,BR,72,7,DT,India,SSEA,True,True,83591.0,1166.0,103.7,2014.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KEBR8CDT,KE,IA,BR,8C,8,DT,India,SSEA,True,True,77381.0,1319.0,108.0,2022.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KHBR42DT,KH,KH,BR,42,4,DT,Cambodia,SSEA,False,True,40990.0,862.0,38.4,2000.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KHBR51DT,KH,KH,BR,51,5,DT,Cambodia,SSEA,False,True,40457.0,1241.0,57.0,2005.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KHBR61DT,KH,KH,BR,61,6,DT,Cambodia,SSEA,False,True,37511.0,970.0,39.6,2010.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KHBR73DT,KH,KH,BR,73,7,DT,Cambodia,SSEA,False,True,33290.0,1072.0,38.4,2014.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KHBR82DT,KH,KH,BR,82,8,DT,Cambodia,SSEA,False,True,34402.0,1124.0,41.4,2021.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KKBR31DT,KK,KK,BR,31,3,DT,Kazakhstan,ECA,False,True,6866.0,635.0,4.9,95.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KKBR42DT,KK,KK,BR,42,4,DT,Kazakhstan,ECA,False,True,8106.0,945.0,8.5,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KMBR32DT,KM,KM,BR,32,3,DT,Comoros,SSA,False,True,7913.0,606.0,5.4,96.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KMBR61DT,KM,KM,BR,61,6,DT,Comoros,SSA,False,True,11497.0,949.0,12.4,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KYBR31DT,KY,KY,BR,31,3,DT,Kyrgyz Republic,ECA,False,True,8781.0,781.0,7.7,97.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+KYBR61DT,KY,KY,BR,61,6,DT,Kyrgyz Republic,ECA,False,True,16180.0,1071.0,19.2,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+LBBR01DT,LB,LB,BR,01,0,DT,Liberia,SSA,False,True,17264.0,385.0,7.0,86.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+LBBR51DT,LB,LB,BR,51,5,DT,Liberia,SSA,False,True,22123.0,939.0,22.9,2007.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+LBBR6ADT,LB,LB,BR,6A,6,DT,Liberia,SSA,False,True,30804.0,965.0,33.2,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+LBBR7ADT,LB,LB,BR,7A,7,DT,Liberia,SSA,False,True,24765.0,1221.0,32.9,2019.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+LKBR02DT,LK,LK,BR,02,0,DT,Sri Lanka,SSEA,False,True,17705.0,391.0,7.8,87.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+LSBR41DT,LS,LS,BR,41,4,DT,Lesotho,SSA,False,True,14708.0,1039.0,16.5,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+LSBR61DT,LS,LS,BR,61,6,DT,Lesotho,SSA,False,True,14429.0,1055.0,16.8,2009.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+LSBR71DT,LS,LS,BR,71,7,DT,Lesotho,SSA,False,True,11710.0,983.0,12.8,2014.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+LSBR81DT,LS,LS,BR,81,8,DT,Lesotho,SSA,False,True,10445.0,1407.0,15.8,2023.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MABR01DT,MA,MA,BR,01,0,DT,Morocco,MENA,False,True,25518.0,433.0,12.2,87.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MABR21DT,MA,MA,BR,21,2,DT,Morocco,MENA,False,True,22657.0,560.0,14.3,92.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MABR43DT,MA,MA,BR,43,4,DT,Morocco,MENA,False,True,32494.0,1282.0,43.8,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MBBR53DT,MB,MB,BR,53,5,DT,Moldova,SSA,False,True,9903.0,1320.0,14.2,2005.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MDBR21DT,MD,MD,BR,21,2,DT,Madagascar,SSA,False,True,18931.0,580.0,11.9,92.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MDBR31DT,MD,MD,BR,31,3,DT,Madagascar,SSA,False,True,21653.0,672.0,16.4,97.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MDBR42DT,MD,MD,BR,42,4,DT,Madagascar,SSA,False,True,20799.0,1098.0,24.7,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MDBR51DT,MD,MD,BR,51,5,DT,Madagascar,SSA,False,True,48464.0,968.0,50.7,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MDBR81DT,MD,MD,BR,81,8,DT,Madagascar,SSA,False,True,47720.0,1162.0,60.2,2021.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MGBR42DT,MG,IA,BR,42,4,DT,India,SSEA,True,True,3480.0,951.0,3.8,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MHBR42DT,MH,IA,BR,42,4,DT,India,SSEA,True,True,14247.0,951.0,14.8,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MLBR01DT,ML,ML,BR,01,0,DT,Mali,SSA,False,True,12252.0,403.0,5.4,87.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MLBR32DT,ML,ML,BR,32,3,DT,Mali,SSA,False,True,37921.0,620.0,26.2,96.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MLBR41DT,ML,ML,BR,41,4,DT,Mali,SSA,False,True,48407.0,839.0,44.7,2001.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MLBR53DT,ML,ML,BR,53,5,DT,Mali,SSA,False,True,52140.0,1265.0,69.9,2006.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MLBR6ADT,ML,ML,BR,6A,6,DT,Mali,SSA,False,True,33803.0,1047.0,38.3,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MLBR7ADT,ML,ML,BR,7A,7,DT,Mali,SSA,False,True,33379.0,1238.0,44.7,2018.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MLBR8ADT,ML,ML,BR,8A,8,DT,Mali,SSA,False,True,53413.0,1234.0,70.8,2023.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MMBR71DT,MM,MM,BR,71,7,DT,Myanmar,SSEA,False,True,22989.0,1184.0,29.3,2016.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MNBR42DT,MN,IA,BR,42,4,DT,India,SSEA,True,True,4763.0,951.0,5.1,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MPBR42DT,MP,IA,BR,42,4,DT,India,SSEA,True,True,23260.0,951.0,24.0,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MRBR71DT,MR,MR,BR,71,7,DT,Mauritania,SSA,False,True,39793.0,1159.0,50.2,2019.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MVBR52DT,MV,MV,BR,52,5,DT,Maldives,SSEA,False,True,20136.0,892.0,19.9,2009.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MVBR71DT,MV,MV,BR,71,7,DT,Maldives,SSEA,False,True,13922.0,1172.0,17.8,2016.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MWBR22DT,MW,MW,BR,22,2,DT,Malawi,SSA,False,True,16330.0,614.0,11.2,92.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MWBR41DT,MW,MW,BR,41,4,DT,Malawi,SSA,False,True,40421.0,936.0,40.8,2000.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MWBR4EDT,MW,MW,BR,4E,4,DT,Malawi,SSA,False,True,35883.0,1045.0,40.5,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MWBR61DT,MW,MW,BR,61,6,DT,Malawi,SSA,False,True,72301.0,1012.0,79.4,2010.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MWBR7ADT,MW,MW,BR,7A,7,DT,Malawi,SSA,False,True,68074.0,1097.0,81.5,2016.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MWBR81DT,MW,MW,BR,81,8,DT,Malawi,SSA,False,True,52765.0,1209.0,68.3,2024.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MXBR01DT,MX,MX,BR,01,0,DT,Mexico,LAC,False,True,22676.0,317.0,7.8,87.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MZBR31DT,MZ,IA,BR,31,3,DT,India,SSEA,True,True,25752.0,624.0,17.9,97.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MZBR41DT,MZ,IA,BR,41,4,DT,India,SSEA,True,True,37443.0,1037.0,41.5,2003.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MZBR42DT,MZ,IA,BR,42,4,DT,India,SSEA,True,True,3201.0,951.0,3.5,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MZBR62DT,MZ,IA,BR,62,6,DT,India,SSEA,True,True,37984.0,982.0,41.6,2011.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+MZBR81DT,MZ,IA,BR,81,8,DT,India,SSEA,True,True,33900.0,1377.0,49.3,2022.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NABR42DT,NA,IA,BR,42,4,DT,India,SSEA,True,True,2976.0,951.0,3.2,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NCBR31DT,NC,NC,BR,31,3,DT,Nicaragua,LAC,False,True,36820.0,776.0,31.5,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NCBR41DT,NC,NC,BR,41,4,DT,Nicaragua,LAC,False,True,34157.0,1219.0,45.2,2001.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NGBR21DT,NG,NG,BR,21,2,DT,Nigeria,SSA,False,True,28123.0,607.0,18.6,90.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NGBR4BDT,NG,NG,BR,4B,4,DT,Nigeria,SSA,False,True,23038.0,975.0,24.2,2003.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NGBR53DT,NG,NG,BR,53,5,DT,Nigeria,SSA,False,True,104808.0,998.0,113.0,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NGBR6ADT,NG,NG,BR,6A,6,DT,Nigeria,SSA,False,True,119386.0,1051.0,139.0,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NGBR7BDT,NG,NG,BR,7B,7,DT,Nigeria,SSA,False,True,127545.0,1202.0,165.6,2018.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NGBR8BDT,NG,NG,BR,8B,8,DT,Nigeria,SSA,False,True,104557.0,1336.0,147.8,2024.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NIBR22DT,NI,NI,BR,22,2,DT,Niger,SSA,False,True,23841.0,609.0,16.0,92.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NIBR31DT,NI,NI,BR,31,3,DT,Niger,SSA,False,True,28888.0,686.0,21.9,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NIBR51DT,NI,NI,BR,51,5,DT,Niger,SSA,False,True,34378.0,1204.0,43.9,2006.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NIBR61DT,NI,NI,BR,61,6,DT,Niger,SSA,False,True,44183.0,1165.0,56.3,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NMBR21DT,NM,NM,BR,21,2,DT,Namibia,SSA,False,True,13372.0,645.0,9.9,92.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NMBR41DT,NM,NM,BR,41,4,DT,Namibia,SSA,False,True,14946.0,878.0,14.4,2000.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NMBR51DT,NM,NM,BR,51,5,DT,Namibia,SSA,False,True,19522.0,992.0,21.2,2007.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NMBR61DT,NM,NM,BR,61,6,DT,Namibia,SSA,False,True,18090.0,983.0,19.4,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NPBR31DT,NP,NP,BR,31,3,DT,Nepal,SSEA,False,True,29156.0,671.0,21.8,52.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NPBR41DT,NP,NP,BR,41,4,DT,Nepal,SSEA,False,True,28955.0,840.0,26.7,2058.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NPBR51DT,NP,NP,BR,51,5,DT,Nepal,SSEA,False,True,26394.0,1083.0,31.3,2063.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NPBR61DT,NP,NP,BR,61,6,DT,Nepal,SSEA,False,True,26615.0,1047.0,30.3,2068.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NPBR7HDT,NP,NP,BR,7H,7,DT,Nepal,SSEA,False,True,26028.0,1340.0,37.4,2073.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+NPBR82DT,NP,NP,BR,82,8,DT,Nepal,SSEA,False,True,27613.0,1422.0,41.4,2078.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ORBR42DT,OR,IA,BR,42,4,DT,India,SSEA,True,True,12529.0,951.0,13.0,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+OSBR01DT,OS,OS,BR,01,0,DT,Nigeria (Ondo State),SSA,False,True,6091.0,375.0,2.6,86.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PEBR01DT,PE,PE,BR,01,0,DT,Peru,LAC,False,True,13291.0,382.0,5.5,86.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PEBR21DT,PE,PE,BR,21,2,DT,Peru,LAC,False,True,38783.0,645.0,28.0,91.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PEBR31DT,PE,PE,BR,31,3,DT,Peru,LAC,False,True,72390.0,790.0,62.5,96.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PEBR41DT,PE,PE,BR,41,4,DT,Peru,LAC,False,True,65453.0,1090.0,75.7,2000.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PEBR51DT,PE,PE,BR,51,5,DT,Peru,LAC,False,True,89220.0,1410.0,137.9,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PEBR5ADT,PE,PE,BR,5A,5,DT,Peru,LAC,False,True,89220.0,1410.0,137.9,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PEBR5IDT,PE,PE,BR,5I,5,DT,Peru,LAC,False,True,50084.0,1370.0,78.6,2009.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PEBR61DT,PE,PE,BR,61,6,DT,Peru,LAC,False,True,46780.0,1357.0,73.7,2010.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PEBR6ADT,PE,PE,BR,6A,6,DT,Peru,LAC,False,True,46194.0,1427.0,76.0,2011.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PEBR6IDT,PE,PE,BR,6I,6,DT,Peru,LAC,False,True,47261.0,1427.0,77.8,2012.0,"['caseid', 'bidx', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007', 'v008']",True,True,True
+PGBR71DT,PG,PG,BR,71,7,DT,Papua New Guinea,SSEA,False,True,34561.0,1119.0,41.5,2017.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PHBR31DT,PH,PH,BR,31,3,DT,Philippines,SSEA,False,True,35863.0,652.0,25.2,93.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PHBR3BDT,PH,PH,BR,3B,3,DT,Philippines,SSEA,False,True,32626.0,840.0,31.1,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PHBR41DT,PH,PH,BR,41,4,DT,Philippines,SSEA,False,True,30443.0,1036.0,32.9,2003.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PHBR52DT,PH,PH,BR,52,5,DT,Philippines,SSEA,False,True,28518.0,1031.0,30.9,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PHBR61DT,PH,PH,BR,61,6,DT,Philippines,SSEA,False,True,31680.0,1073.0,38.1,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PHBR71DT,PH,PH,BR,71,7,DT,Philippines,SSEA,False,True,47244.0,1158.0,58.4,2017.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PHBR82DT,PH,PH,BR,82,8,DT,Philippines,SSEA,False,True,45633.0,1252.0,60.7,2022.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PJBR42DT,PJ,IA,BR,42,4,DT,India,SSEA,True,True,7661.0,951.0,8.0,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PKBR21DT,PK,PK,BR,21,2,DT,Pakistan,SSEA,False,True,27369.0,677.0,20.5,90.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PKBR53DT,PK,PK,BR,53,5,DT,Pakistan,SSEA,False,True,39049.0,1076.0,44.0,2007.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PKBR61DT,PK,PK,BR,61,6,DT,Pakistan,SSEA,False,True,50238.0,1000.0,56.1,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PKBR71DT,PK,PK,BR,71,7,DT,Pakistan,SSEA,False,True,50495.0,1186.0,65.2,2018.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+PYBR21DT,PY,PY,BR,21,2,DT,Paraguay,LAC,False,True,15346.0,571.0,9.7,90.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+RJBR42DT,RJ,IA,BR,42,4,DT,India,SSEA,True,True,22680.0,951.0,23.4,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+RWBR21DT,RW,RW,BR,21,2,DT,Rwanda,SSA,False,True,19440.0,593.0,12.4,92.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+RWBR41DT,RW,RW,BR,41,4,DT,Rwanda,SSA,False,True,27602.0,934.0,28.1,2000.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+RWBR53DT,RW,RW,BR,53,5,DT,Rwanda,SSA,False,True,30072.0,1077.0,35.4,2005.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+RWBR5ADT,RW,RW,BR,5A,5,DT,Rwanda,SSA,False,True,18421.0,913.0,17.4,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+RWBR61DT,RW,RW,BR,61,6,DT,Rwanda,SSA,False,True,32639.0,1021.0,36.1,2011.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+RWBR70DT,RW,RW,BR,70,7,DT,Rwanda,SSA,False,True,30058.0,1078.0,34.8,2014.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+RWBR81DT,RW,RW,BR,81,8,DT,Rwanda,SSA,False,True,30820.0,1216.0,41.1,2020.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SDBR02DT,SD,SD,BR,02,0,DT,Sudan,SSA,False,True,25805.0,465.0,12.6,89.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SKBR42DT,SK,IA,BR,42,4,DT,India,SSEA,True,True,3296.0,951.0,3.6,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SLBR51DT,SL,SL,BR,51,5,DT,Sierra Leone,SSA,False,True,21136.0,960.0,22.2,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SLBR61DT,SL,SL,BR,61,6,DT,Sierra Leone,SSA,False,True,47392.0,994.0,52.5,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SLBR7ADT,SL,SL,BR,7A,7,DT,Sierra Leone,SSA,False,True,40543.0,1173.0,51.6,2019.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SNBR02DT,SN,SN,BR,02,0,DT,Senegal,SSA,False,True,14389.0,402.0,6.3,86.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SNBR21DT,SN,SN,BR,21,2,DT,Senegal,SSA,False,True,20815.0,667.0,15.2,93.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SNBR32DT,SN,SN,BR,32,3,DT,Senegal,SSA,False,True,27448.0,814.0,22.9,97.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SNBR4ADT,SN,SN,BR,4A,4,DT,Senegal,SSA,False,True,39895.0,1006.0,42.9,2005.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SNBR61DT,SN,SN,BR,61,6,DT,Senegal,SSA,False,True,42510.0,1023.0,48.1,2011.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SNBR6DDT,SN,SN,BR,6D,6,DT,Senegal,SSA,False,True,22563.0,953.0,22.9,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SNBR71DT,SN,SN,BR,71,7,DT,Senegal,SSA,False,False,,,,,,,,
+SNBR7ADT,SN,SN,BR,7A,7,DT,Senegal,SSA,False,True,23250.0,1022.0,25.3,2015.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SNBR7IDT,SN,SN,BR,7I,7,DT,Senegal,SSA,False,False,,,,,,,,
+SNBR7ZDT,SN,SN,BR,7Z,7,DT,Senegal,SSA,False,True,42944.0,1209.0,55.6,2017.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SNBR81DT,SN,SN,BR,81,8,DT,Senegal,SSA,False,True,23913.0,1191.0,30.6,2018.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SNBR8BDT,SN,SN,BR,8B,8,DT,Senegal,SSA,False,True,21562.0,1191.0,27.6,2019.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SNBR8SDT,SN,SN,BR,8S,8,DT,Senegal,SSA,False,True,39490.0,1288.0,53.6,2023.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+STBR51DT,ST,ST,BR,51,5,DT,Sao Tome and Principe,SSA,False,True,7620.0,1061.0,9.0,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+SZBR51DT,SZ,SZ,BR,51,5,DT,Eswatini,SSA,False,True,11410.0,1058.0,13.3,2006.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TDBR31DT,TD,TD,BR,31,3,DT,Chad,SSA,False,True,25739.0,733.0,20.7,96.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TDBR41DT,TD,TD,BR,41,4,DT,Chad,SSA,False,True,21448.0,1114.0,25.4,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TDBR71DT,TD,TD,BR,71,7,DT,Chad,SSA,False,True,68989.0,1052.0,77.2,2014.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TGBR01DT,TG,TG,BR,01,0,DT,Togo,SSA,False,True,10782.0,436.0,5.1,88.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TGBR31DT,TG,TG,BR,31,3,DT,Togo,SSA,False,True,26269.0,633.0,18.7,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TGBR61DT,TG,TG,BR,61,6,DT,Togo,SSA,False,True,26264.0,1054.0,29.9,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+THBR01DT,TH,TH,BR,01,0,DT,Thailand,SSEA,False,True,17803.0,406.0,8.2,87.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TJBR61DT,TJ,TJ,BR,61,6,DT,Tajikistan,ECA,False,True,19938.0,1164.0,25.7,2012.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TJBR72DT,TJ,TJ,BR,72,7,DT,Tajikistan,ECA,False,True,21985.0,1146.0,28.0,2017.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TJBR81DT,TJ,TJ,BR,81,8,DT,Tajikistan,ECA,False,True,20356.0,1221.0,27.2,2023.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TLBR61DT,TL,TL,BR,61,6,DT,Timor-Leste,SSEA,False,True,35998.0,977.0,38.6,2009.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TLBR71DT,TL,TL,BR,71,7,DT,Timor-Leste,SSEA,False,True,28682.0,1244.0,38.4,2016.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TNBR02DT,TN,IA,BR,02,0,DT,India,SSEA,True,True,16463.0,464.0,8.4,88.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TNBR42DT,TN,IA,BR,42,4,DT,India,SSEA,True,True,11095.0,951.0,11.6,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TRBR31DT,TR,IA,BR,31,3,DT,India,SSEA,True,True,19762.0,820.0,17.5,93.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TRBR41DT,TR,IA,BR,41,4,DT,India,SSEA,True,True,17791.0,902.0,17.7,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TRBR42DT,TR,IA,BR,42,4,DT,India,SSEA,True,True,2911.0,951.0,3.2,0.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TRBR4ADT,TR,IA,BR,4A,4,DT,India,SSEA,True,True,22443.0,1169.0,28.5,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TRBR51DT,TR,IA,BR,51,5,DT,India,SSEA,True,True,19678.0,1236.0,25.1,2008.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TRBR62DT,TR,IA,BR,62,6,DT,India,SSEA,True,True,17871.0,1173.0,22.2,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TRBR71DT,TR,IA,BR,71,7,DT,India,SSEA,True,True,13367.0,1293.0,18.7,2018.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TTBR01DT,TT,TT,BR,01,0,DT,Trinidad and Tobago,LAC,False,True,7837.0,397.0,3.5,87.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TZBR21DT,TZ,TZ,BR,21,2,DT,Tanzania,SSA,False,True,29143.0,604.0,19.5,92.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TZBR3ADT,TZ,TZ,BR,3A,3,DT,Tanzania,SSA,False,True,24890.0,770.0,21.0,96.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TZBR41DT,TZ,TZ,BR,41,4,DT,Tanzania,SSA,False,True,11952.0,811.0,10.3,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TZBR4IDT,TZ,TZ,BR,4I,4,DT,Tanzania,SSA,False,True,30557.0,1053.0,34.4,2004.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TZBR63DT,TZ,TZ,BR,63,6,DT,Tanzania,SSA,False,True,29777.0,1051.0,35.3,2010.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TZBR7BDT,TZ,TZ,BR,7B,7,DT,Tanzania,SSA,False,True,37169.0,1276.0,52.0,2015.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+TZBR82DT,TZ,TZ,BR,82,8,DT,Tanzania,SSA,False,True,40394.0,1350.0,58.6,2022.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+UABR51DT,UA,UA,BR,51,5,DT,Ukraine,ECA,False,True,8007.0,1013.0,8.6,2007.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+UGBR01DT,UG,UG,BR,01,0,DT,Uganda,SSA,False,True,16074.0,384.0,6.8,88.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+UGBR33DT,UG,UG,BR,33,3,DT,Uganda,SSA,False,True,22752.0,796.0,19.6,95.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+UGBR41DT,UG,UG,BR,41,4,DT,Uganda,SSA,False,True,23410.0,923.0,23.6,2001.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+UGBR52DT,UG,UG,BR,52,5,DT,Uganda,SSA,False,True,30090.0,1021.0,33.7,2006.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+UGBR61DT,UG,UG,BR,61,6,DT,Uganda,SSA,False,True,28609.0,956.0,30.0,2011.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+UGBR7BDT,UG,UG,BR,7B,7,DT,Uganda,SSA,False,True,57906.0,1137.0,71.8,2016.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+UPBR42DT,UP,IA,BR,42,4,DT,India,SSEA,True,True,32933.0,951.0,33.9,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+UZBR31DT,UZ,UZ,BR,31,3,DT,Uzbekistan,ECA,False,True,9650.0,699.0,7.5,96.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+VNBR31DT,VN,VN,BR,31,3,DT,Vietnam,SSEA,False,True,15517.0,629.0,10.5,97.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+VNBR41DT,VN,VN,BR,41,4,DT,Vietnam,SSEA,False,True,14383.0,621.0,9.7,2.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+WBBR42DT,WB,IA,BR,42,4,DT,India,SSEA,True,True,11378.0,951.0,11.9,99.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+YEBR21DT,YE,YE,BR,21,2,DT,Yemen,MENA,False,True,29803.0,721.0,24.5,91.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+YEBR61DT,YE,YE,BR,61,6,DT,Yemen,MENA,False,True,64602.0,1015.0,70.7,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZABR31DT,ZA,ZA,BR,31,3,DT,South Africa,SSA,False,True,22934.0,746.0,18.3,98.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZABR71DT,ZA,ZA,BR,71,7,DT,South Africa,SSA,False,True,14144.0,1040.0,16.4,2016.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZMBR21DT,ZM,ZM,BR,21,2,DT,Zambia,SSA,False,True,22122.0,586.0,14.4,92.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZMBR31DT,ZM,ZM,BR,31,3,DT,Zambia,SSA,False,True,24799.0,653.0,18.1,96.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZMBR42DT,ZM,ZM,BR,42,4,DT,Zambia,SSA,False,True,23805.0,1019.0,25.9,2002.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZMBR51DT,ZM,ZM,BR,51,5,DT,Zambia,SSA,False,True,21366.0,949.0,22.3,2007.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZMBR61DT,ZM,ZM,BR,61,6,DT,Zambia,SSA,False,True,49207.0,999.0,52.8,2013.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZMBR71DT,ZM,ZM,BR,71,7,DT,Zambia,SSA,False,True,38446.0,1135.0,46.8,2018.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZMBR81DT,ZM,ZM,BR,81,8,DT,Zambia,SSA,False,True,35610.0,1242.0,47.3,2024.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZWBR01DT,ZW,ZW,BR,01,0,DT,Zimbabwe,SSA,False,True,12405.0,494.0,6.9,88.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZWBR31DT,ZW,ZW,BR,31,3,DT,Zimbabwe,SSA,False,True,16777.0,646.0,12.4,94.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZWBR42DT,ZW,ZW,BR,42,4,DT,Zimbabwe,SSA,False,True,14184.0,827.0,12.8,1999.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZWBR52DT,ZW,ZW,BR,52,5,DT,Zimbabwe,SSA,False,True,19489.0,1031.0,22.1,2005.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZWBR62DT,ZW,ZW,BR,62,6,DT,Zimbabwe,SSA,False,True,19279.0,967.0,20.4,2010.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True
+ZWBR72DT,ZW,ZW,BR,72,7,DT,Zimbabwe,SSA,False,True,20791.0,1114.0,25.5,2015.0,"['caseid', 'bidx', 'v000', 'v001', 'v002', 'v003', 'v004', 'v005', 'v006', 'v007']",True,True,True

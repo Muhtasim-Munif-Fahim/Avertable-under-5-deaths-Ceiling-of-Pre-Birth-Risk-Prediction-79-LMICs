@@ -1,0 +1,19 @@
+cohort,region,n_records,n_deaths,u5m_per1000_unweighted,u5m_per1000_survey_weighted
+All recorded births,All,10669397,885756,83.02,83.99
+All recorded births,ECA,186670,7465,39.99,40.71
+All recorded births,LAC,1114800,69134,62.01,59.78
+All recorded births,MENA,725365,35704,49.22,47.92
+All recorded births,SSA,4063239,476212,117.2,119.1
+All recorded births,SSEA,4579323,297241,64.91,65.76
+Fully exposed (years_before_survey >= 5),All,8348318,760081,91.05,92.03
+Fully exposed (years_before_survey >= 5),ECA,150504,6584,43.75,44.44
+Fully exposed (years_before_survey >= 5),LAC,912470,62357,68.34,65.71
+Fully exposed (years_before_survey >= 5),MENA,569659,31493,55.28,53.66
+Fully exposed (years_before_survey >= 5),SSA,3035877,401303,132.19,134.33
+Fully exposed (years_before_survey >= 5),SSEA,3679808,258344,70.21,71.19
+Definitively classified (death OR years_before_survey >= 5),All,8473993,885756,104.53,105.54
+Definitively classified (death OR years_before_survey >= 5),ECA,151385,7465,49.31,50.34
+Definitively classified (death OR years_before_survey >= 5),LAC,919247,69134,75.21,72.54
+Definitively classified (death OR years_before_survey >= 5),MENA,573870,35704,62.22,60.38
+Definitively classified (death OR years_before_survey >= 5),SSA,3110786,476212,153.08,155.57
+Definitively classified (death OR years_before_survey >= 5),SSEA,3718705,297241,79.93,80.59

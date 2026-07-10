@@ -1,0 +1,17 @@
+cohort,risk_factor,PAF
+all_records,Education < Secondary -> Secondary+,37.5
+all_records,Wealth < Richest -> Richest,9.79
+all_records,Rural -> Urban,11.34
+all_records,Maternal age != 20-34 -> 20-34,9.43
+all_records,Birth interval != 24-47mo -> 24-47mo,20.81
+all_records,Unmarried -> Married,1.55
+all_records,Multiple -> Singleton,5.11
+all_records,Male -> Female,5.76
+fully_exposed,Education < Secondary -> Secondary+,38.28
+fully_exposed,Wealth < Richest -> Richest,11.56
+fully_exposed,Rural -> Urban,11.77
+fully_exposed,Maternal age != 20-34 -> 20-34,10.16
+fully_exposed,Birth interval != 24-47mo -> 24-47mo,21.22
+fully_exposed,Unmarried -> Married,1.33
+fully_exposed,Multiple -> Singleton,4.79
+fully_exposed,Male -> Female,5.41

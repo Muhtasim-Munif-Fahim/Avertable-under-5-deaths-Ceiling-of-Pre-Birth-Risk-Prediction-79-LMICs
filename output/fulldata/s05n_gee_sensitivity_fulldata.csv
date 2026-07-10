@@ -1,0 +1,10 @@
+determinant,aOR_canonical,aOR_weighted,aOR_dhs_only
+edu_secondary,0.4642,0.4557,0.4594
+edu_higher,0.3066,0.2928,0.3042
+bi_short,2.3886,2.382,2.3852
+bi_long,0.5338,0.5348,0.532
+is_multiple,6.2848,6.255,6.289
+age_under20,1.6974,1.6656,1.6962
+bo_6plus,1.8289,1.829,1.8052
+is_urban,0.9146,0.8983,0.9156
+wq_5,0.5496,0.5514,0.5472

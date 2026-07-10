@@ -1,0 +1,19 @@
+cohort,predictions,region,n,events,mean_observed,mean_predicted,citl_prob,slope,ici
+Temporal holdout,raw,SSA,111371,6235,0.056,0.4147,-0.3587,0.969,0.3587
+Temporal holdout,raw,SSEA,208934,16631,0.0796,0.4391,-0.3595,0.86,0.3595
+Temporal holdout,raw,ECA,2908,194,0.0667,0.4536,-0.3869,0.891,0.3869
+Temporal holdout,raw,MENA,18813,770,0.0409,0.4086,-0.3677,1.098,0.3677
+Temporal holdout,isotonic,SSA,111371,6235,0.056,0.0775,-0.0215,0.948,0.0216
+Temporal holdout,isotonic,SSEA,208934,16631,0.0796,0.0839,-0.0043,0.848,0.0082
+Temporal holdout,isotonic,ECA,2908,194,0.0667,0.0903,-0.0235,0.888,0.0238
+Temporal holdout,isotonic,MENA,18813,770,0.0409,0.0743,-0.0334,1.088,0.0334
+Geographic holdout,raw,SSA,80022,4078,0.051,0.3993,-0.3483,0.915,0.3483
+Geographic holdout,raw,SSEA,27645,837,0.0303,0.3954,-0.3651,0.883,0.3651
+Geographic holdout,raw,LAC,84504,4874,0.0577,0.4203,-0.3627,0.988,0.3627
+Geographic holdout,raw,ECA,3233,221,0.0684,0.4469,-0.3786,0.931,0.3786
+Geographic holdout,raw,MENA,36346,1983,0.0546,0.414,-0.3594,0.791,0.3594
+Geographic holdout,isotonic,SSA,80022,4078,0.051,0.0717,-0.0207,0.893,0.0207
+Geographic holdout,isotonic,SSEA,27645,837,0.0303,0.0704,-0.0401,0.862,0.0402
+Geographic holdout,isotonic,LAC,84504,4874,0.0577,0.0779,-0.0202,0.973,0.0203
+Geographic holdout,isotonic,ECA,3233,221,0.0684,0.0865,-0.0181,0.92,0.0209
+Geographic holdout,isotonic,MENA,36346,1983,0.0546,0.0762,-0.0216,0.779,0.0217

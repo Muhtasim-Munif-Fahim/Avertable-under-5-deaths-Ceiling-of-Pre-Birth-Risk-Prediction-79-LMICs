@@ -1,0 +1,15 @@
+check_name,scope,n_violations,status,detail
+edu_level_bounded,all,0,PASS,"(expected {0,1,2,3}, found unique=[np.float64(0.0), np.float64(1.0), np.float64(2.0), np.float64(3.0)])"
+birth_interval_nonneg,all,0,PASS,
+wealth_quintile_bounded,all,0,PASS,
+no_india_subnational,all,0,PASS,
+no_nan_country_code,all,0,PASS,
+no_nan_survey_year,all,0,PASS,
+no_nan_who_region,all,0,PASS,
+ybs_equals_sy_minus_by,all,0,PASS,
+birth_year_plausible,all,12419,WARN,"(low=1, high=12418) surveys: NP-1995:10801; IA-2019:1617"
+u5mr_plausible_per_survey,all,0,PASS,
+sample_weight_mean_near_1,all,0,PASS,(out of 287 survey-year groups)
+d006_scope_invariant,all,0,PASS,
+d007_rerelease_complete,catalog,0,PASS,
+source_file_count,all,0,PASS,(287 unique source files)

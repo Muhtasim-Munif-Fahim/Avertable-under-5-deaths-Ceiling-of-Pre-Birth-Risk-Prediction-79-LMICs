@@ -1,0 +1,11 @@
+feature,label,mean_abs_shap
+edu_level,Maternal education,0.3338445
+birth_interval_months,Birth interval,0.2660365
+birth_order,Birth order,0.18740167
+hh_members,Household members,0.16701569
+maternal_age_at_birth,Maternal age,0.15454543
+multiple_birth,Multiple birth,0.09631321
+wealth_quintile,Wealth quintile,0.0720615
+child_male,Male child,0.06537407
+urban,Urban residence,0.06191181
+currently_married,Currently married,0.013943562

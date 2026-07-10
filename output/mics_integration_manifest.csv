@@ -1,0 +1,17 @@
+country_iso3,survey_year,mics_round,zip_filename,n_births,n_died_under5,u5m_proportion,status
+DZA,2019,MICS6,Algeria MICS6 Datasets.zip,53847,1123,0.020858,success
+CAF,2019,MICS6,Central African Republic MICS6 Datasets.zip,26536,1922,0.07243,success
+GNB,2019,MICS6,Guinea Bissau MICS6 Datasets.zip,25966,1444,0.055613,success
+GNB,2014,MICS5,Guinea Bissau_MICS5_Datasets.zip,27607,2374,0.085996,success
+KIR,2019,MICS6,Kiribati MICS6 Datasets.zip,8402,359,0.042728,success
+LAO,2023,MICS6,Lao PDR MICS6 2023 Datasets.zip,40609,1461,0.035977,success
+LAO,2017,MICS6,Lao PDR MICS6 SPSS Datasets.zip,54163,3615,0.066743,success
+MNG,2018,MICS6,Mongolia MICS 2018 SPSS Datasets.zip,22935,871,0.03798,success
+MNG,2013,MICS5,Mongolia_MICS5_Datasets.zip,24448,1160,0.047448,success
+PSE,2014,MICS5,State of Palestine 2014 MICS_Datasets.zip,31817,751,0.023605,success
+PSE,2020,MICS6,State of Palestine MICS6 SPSS Datasets.zip,25482,503,0.019739,success
+SDN,2014,MICS5,Sudan_MICS5_Datasets.zip,52245,3676,0.07039,success
+TUN,2018,MICS6,Tunisia MICS6 Datasets.zip,14058,212,0.01508,success
+TUN,2023,MICS6,Tunisia MICS6 2023 Datasets.zip,9415,141,0.014976,success
+UZB,2022,MICS6,Uzbekistan MICS6 Datasets.zip,9064,310,0.034201,success
+VUT,2023,MICS6,Vanuatu MICS6 Datasets.zip,7521,81,0.01077,success

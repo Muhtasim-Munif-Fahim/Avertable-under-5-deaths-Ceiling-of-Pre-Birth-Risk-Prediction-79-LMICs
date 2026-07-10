@@ -1,0 +1,13 @@
+variable,dhs_value,mics_value,smd_dhs_minus_mics,n_dhs,n_mics
+"Recorded U5M (per 1,000)",85.65,44.69,0.167,10235282,434081
+Male child (%),51.54,51.47,0.001,10235282,434078
+Multiple birth (%),2.25,2.39,-0.009,10235282,434080
+Birth order (mean),2.79,1.98,0.535,10235282,434081
+"Preceding interval, months (mean)",36.17,33.14,0.149,7052037,303327
+"Maternal age at birth, years (mean)",24.31,26.19,-0.346,10234134,434074
+No maternal education (%),39.67,15.24,0.569,10170313,434054
+Secondary+ maternal education (%),32.43,53.56,-0.437,10170313,434054
+Currently married (%),89.86,92.58,-0.096,10235274,434027
+Poorest wealth quintile (%),22.57,22.37,0.005,9535537,434081
+Urban residence (%),34.03,47.14,-0.269,10235282,416487
+Household members (mean),6.7,6.61,0.027,10235282,434081

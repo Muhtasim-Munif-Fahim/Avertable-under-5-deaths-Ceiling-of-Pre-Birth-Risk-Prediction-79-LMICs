@@ -1,0 +1,10 @@
+determinant,aOR_canonical,aOR_weighted,aOR_dhs_only
+Education: Secondary,0.4642,0.4557,0.4594
+Education: Higher,0.3066,0.2928,0.3042
+Birth interval: <24 mo,2.3886,2.382,2.3852
+Birth interval: 48+ mo,0.5338,0.5348,0.532
+Multiple birth,6.2848,6.255,6.289
+Maternal age: <20,1.6974,1.6656,1.6962
+Birth order: 6th+,1.8289,1.829,1.8052
+Residence: Urban,0.9146,0.8983,0.9156
+Wealth: Richest,0.5496,0.5514,0.5472

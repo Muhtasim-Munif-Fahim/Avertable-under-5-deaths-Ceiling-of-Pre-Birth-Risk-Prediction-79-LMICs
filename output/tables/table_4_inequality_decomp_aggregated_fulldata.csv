@@ -1,0 +1,12 @@
+Group,Factor,Contribution,Total,Percent_Contribution
+All LMICs (2000-2024),Birth interval,0.005415,-0.128,-4.25
+All LMICs (2000-2024),Birth order,-0.01991,-0.128,15.6
+All LMICs (2000-2024),Birth type,0.000877,-0.128,-0.69
+All LMICs (2000-2024),Child sex,0.000143,-0.128,-0.11
+All LMICs (2000-2024),Decade trend,0.000259,-0.128,-0.2
+All LMICs (2000-2024),Education,-0.063085,-0.128,49.43000000000001
+All LMICs (2000-2024),Marital status,0.000208,-0.128,-0.16
+All LMICs (2000-2024),Maternal age,-0.003224,-0.128,2.52
+All LMICs (2000-2024),Residence,-0.028383,-0.128,22.24
+All LMICs (2000-2024),Residual,-0.019993600000000007,-0.128,15.620000000000005
+All LMICs (2000-2024),TOTAL_CI,-0.128,-0.128,100.0

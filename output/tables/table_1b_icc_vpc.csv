@@ -1,0 +1,2 @@
+model,icc,vpc,note
+Null (country random intercept),0.0005,0.0005,ICC = tau^2 / (tau^2 + pi^2/3); empirical approximation (not a formal GLMM variance component); country-level clustering

@@ -1,0 +1,9 @@
+variable,crude_OR,adjusted_OR,CI_lower,CI_upper,p_value,significance
+child_male,1.136,1.148,1.115,1.185,<0.0001,***
+multiple_birth,4.237,3.996,3.675,4.246,<0.0001,***
+birth_order,1.073,1.153,1.14,1.168,<0.0001,***
+maternal_age_at_birth,0.971,0.931,0.927,0.935,<0.0001,***
+edu_level,0.621,0.752,0.731,0.769,<0.0001,***
+currently_married,0.879,0.876,0.828,0.924,<0.0001,***
+wealth_quintile,0.86,0.921,0.908,0.937,<0.0001,***
+urban,0.647,0.932,0.891,0.973,0.0032,**

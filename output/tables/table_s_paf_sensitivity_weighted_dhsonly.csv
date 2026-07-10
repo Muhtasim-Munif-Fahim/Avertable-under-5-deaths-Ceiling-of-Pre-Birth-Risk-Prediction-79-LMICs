@@ -1,0 +1,9 @@
+risk_factor,PAF_canonical,PAF_weighted,PAF_dhs_only,delta_weighted,delta_dhs_only
+Education < Secondary -> Secondary+,37.5,38.23,37.68,0.7,0.2
+Wealth < Richest -> Richest,9.79,10.34,9.8,0.6,0.0
+Rural -> Urban,11.34,13.69,11.06,2.3,-0.3
+Maternal age != 20-34 -> 20-34,9.43,9.32,9.35,-0.1,-0.1
+Birth interval != 24-47mo -> 24-47mo,20.81,20.95,19.97,0.1,-0.8
+Unmarried -> Married,1.55,1.56,1.51,0.0,-0.0
+Multiple -> Singleton,5.11,5.1,5.1,-0.0,-0.0
+Male -> Female,5.76,5.72,5.63,-0.0,-0.1
