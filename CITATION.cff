@@ -15,8 +15,9 @@ authors:
   - family-names: Karim
     given-names: Md Rezaul
     affiliation: "Department of Statistics, University of Rajshahi, Bangladesh"
-repository-code: "https://github.com/Muhtasim-Munif-Fahim/Child_PVT"
+repository-code: "https://github.com/Muhtasim-Munif-Fahim/Avertable-under-5-deaths-Ceiling-of-Pre-Birth-Risk-Prediction-79-LMICs"
 license: MIT
+doi: 10.5281/zenodo.21302022
 version: 1.0.0
 date-released: 2026-07-10
 preferred-citation:

@@ -58,7 +58,7 @@ DHS and MICS microdata: free from the providers above after registration; not
 redistributable here. UN-IGME national death envelopes:
 [childmortality.org](https://childmortality.org). Everything generated *by* this
 study (code, aggregates, registry, model) is in this repository and archived on
-Zenodo (DOI: *to be minted at release*).
+Zenodo ([10.5281/zenodo.21302022](https://doi.org/10.5281/zenodo.21302022)).
 
 ## License and citation
 
