@@ -20,15 +20,24 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 # ---------------------------------------------------------------------------
 # External data source (set DHS_DATA_DIR env var or update fallback below)
 # ---------------------------------------------------------------------------
-RAW_DHS_DIR = Path(
-    os.environ.get(
-        "DHS_DATA_DIR",
-        str(Path.home() / "dhs_data"),  # set DHS_DATA_DIR to your local DHS .DTA folder
-    )
-)
+def _resolve_dhs_dir() -> Path:
+    """Resolve DHS data directory: env var > workspace data dir > sibling dir > hardcoded fallback."""
+    env = os.environ.get("DHS_DATA_DIR")
+    if env:
+        return Path(env)
+    # Workspace layout since 2026-09-24: <workspace>/01_data/raw/ and <workspace>/02_analysis/<repo>/
+    workspace = PROJECT_ROOT.parents[1] / "01_data" / "raw" / "DHS MultiCountry Data"
+    if workspace.is_dir():
+        return workspace
+    sibling = PROJECT_ROOT.parent / "DHS MultiCountry Data"
+    if sibling.is_dir():
+        return sibling
+    return Path(r"J:\Survey Research\03 Temporal NAS\DHS MultiCountry Data")
+
+RAW_DHS_DIR = _resolve_dhs_dir()
 
 # ---------------------------------------------------------------------------
-# Data layer hierarchy: 00_raw -> 01_parquet -> 02_harmonized
+# Data layer hierarchy: raw DHS (01_data) -> 01_parquet -> 02_harmonized
 # ---------------------------------------------------------------------------
 DATA_DIR = PROJECT_ROOT / "data"
 
@@ -36,24 +45,15 @@ DATA_DIR = PROJECT_ROOT / "data"
 RAW_MICS_DIR    = DATA_DIR / "raw" / "mics"
 RAW_UN_IGME_DIR = DATA_DIR / "raw" / "un_igme"
 
-# Level 0: Raw DHS .DTA files (symlink or reference)
-RAW_DATA_DIR = DATA_DIR / "00_raw"
-
 # Level 1: Per-survey Parquet files (output of s02_convert.py)
 PARQUET_DIR = DATA_DIR / "01_parquet"
 
 # Level 2: Final harmonized analysis datasets (output of s03_harmonize.py)
 HARMONIZED_DIR = DATA_DIR / "02_harmonized"
-# Single canonical analysis file (all years + in_primary_scope flag).
-# Downstream code should use src.utils.io.load_primary() which applies
-# the D006 scope filter at load time.
+# Harmonised DHS + MICS base written by the data build (s03_harmonize / s03_mics_pipeline). The v2
+# analysis cohort (global_analysis_v2_candidate.parquet) is built from it and its publication runs
+# check it is unchanged, so it stays even though no model reads it directly.
 GLOBAL_PARQUET = HARMONIZED_DIR / "global_analysis.parquet"
-# Country-level WDI covariates (output of s03d_country_covariates.py)
-COUNTRY_COVARIATES = HARMONIZED_DIR / "country_covariates.parquet"
-
-# Legacy aliases (DEPRECATED — will be removed after migration)
-GLOBAL_FULL_PARQUET = GLOBAL_PARQUET
-GLOBAL_PRIMARY_PARQUET = GLOBAL_PARQUET
 
 # Catalog: dataset metadata
 CATALOG_DIR = DATA_DIR / "catalog"
@@ -68,8 +68,14 @@ LOG_DIR = DATA_DIR / "logs"
 # ---------------------------------------------------------------------------
 OUTPUT_DIR = PROJECT_ROOT / "output"
 TABLES_DIR = OUTPUT_DIR / "tables"
-FIGURES_DIR = OUTPUT_DIR / "figures"
-MODELS_DIR = OUTPUT_DIR / "models"
+# Figures live outside the repo since 2026-09-24, as the standalone workspace folder
+# <workspace>/04_figures/: ONE set (BMJ style), files named by submitted figure number.
+FIGURES_DIR = PROJECT_ROOT.parents[1] / "04_figures"
+# How output/*.tex reach that folder in \includegraphics (relative, so no spaces in the path).
+TEX_FIGURES_PREFIX = "../../../04_figures/"
+# MODELS_DIR removed 2026-09-02: it pointed at output/models/, which never existed and
+# had no readers. Its subject (persisted ML boosters) left with the prediction arm on
+# 2026-08-03 — see ../../_archive/2026-08-03_ml_arm_withdrawn/.
 
 # ---------------------------------------------------------------------------
 # Documentation

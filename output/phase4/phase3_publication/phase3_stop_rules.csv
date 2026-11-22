@@ -1,0 +1,22 @@
+rule_id,decision_class,value,threshold,triggered,evaluable,detail
+person_month_arithmetic,DATA_INTEGRITY_FAILURE,0.0,absolute discrepancy <=1e-8,False,True,
+grouped_likelihood_equivalence,METHOD_FAILURE,6.209701641779475e-09,max coefficient difference <1e-8,False,True,
+grouped_standardized_risk_equivalence,METHOD_FAILURE,3.9646403937609875e-09,max standardized risk difference <1e-8,False,True,
+factorized_likelihood_equivalence,METHOD_FAILURE,0.0,literal-versus-factorized loss difference <1e-10,False,True,
+factorized_gradient_equivalence,METHOD_FAILURE,4.440892098500626e-16,literal-versus-factorized gradient difference <1e-10,False,True,
+preconditioned_eta_equivalence,METHOD_FAILURE,0.0,original-versus-preconditioned linear predictor difference <1e-12,False,True,
+algebraic_standardization_equivalence,METHOD_FAILURE,1.1102230246251565e-16,max 60-month risk difference <=1e-12,False,True,
+factorized_standardization_equivalence,METHOD_FAILURE,7.216449660063518e-16,literal-versus-factorized 60-month risk difference <=1e-12,False,True,
+point_model_valid,METHOD_FAILURE,converged=True;rank_deficient=False,converged and full rank,False,True,
+point_scaled_gradient,METHOD_FAILURE,9.162740833428647e-09,maximum absolute gradient divided by total risk weight <=1e-06,False,True,
+all_age_months_supported,METHOD_FAILURE,60,60 months,False,True,
+hazard_and_risk_validity,METHOD_FAILURE,0,0 non-finite or out-of-bounds probabilities,False,True,
+counterfactual_monotonicity,METHOD_FAILURE,0,0 eligible patterns with increased risk,False,True,
+joint_same_surface_identity,METHOD_FAILURE,1.3877787807814457e-16,<=1e-12,False,True,
+bootstrap_replicates_requested,METHOD_FAILURE,1000,>=200 for decision pilot,False,True,
+paired_bootstrap_success,METHOD_FAILURE,1000,>=950,False,True,
+binary_survival_paf_shift_education,NARRATIVE_ESCALATION,1.2600313987395246,>=5 percentage points OR >=20% relative,False,True,survival=20.112; binary=21.372; relative=5.9%
+binary_survival_paf_shift_spacing,NARRATIVE_ESCALATION,0.5186555835211522,>=5 percentage points OR >=20% relative,False,True,survival=12.839; binary=13.358; relative=3.9%
+binary_survival_paf_shift_joint,NARRATIVE_ESCALATION,1.7221948632071538,>=5 percentage points OR >=20% relative,False,True,survival=30.473; binary=32.196; relative=5.3%
+lever_order_reversal,NARRATIVE_ESCALATION,True,education>spacing remains True,False,True,
+headline_coefficient_sign_flip,NARRATIVE_ESCALATION,0,0 common substantive flips outside abs(log OR)<0.02 tie band,False,True,

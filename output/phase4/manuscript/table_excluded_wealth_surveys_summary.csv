@@ -1,0 +1,4 @@
+group,n_rounds,n_countries,countries_entirely_lost,programmes,survey_year_min,survey_year_max,n_births_exact,pct_of_exact_cohort,u5_risk_per1000,rounds_by_region
+excluded (no wealth index),22,21,NC;VN,DHS,2000,2003,532246,6.5,136.3,SSA=9;LAC=5;SSEA=4;MENA=3;ECA=1
+retained,193,77,,DHS;MICS,2002,2024,7652332,93.5,89.1,SSA=104;SSEA=42;LAC=19;MENA=15;ECA=13
+"retained, fielded 2000-2004",14,14,,DHS,2002,2004,344187,4.2,137.5,SSA=9;SSEA=3;MENA=1;LAC=1

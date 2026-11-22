@@ -239,6 +239,8 @@ def get_dta_metadata(dta_path: Path) -> dict:
             "survey_year": survey_year,
             "column_names_sample": meta.column_names[:10],
             "has_v005": "v005" in meta.column_names,
+            "has_v008": "v008" in meta.column_names,
+            "has_b3": "b3" in meta.column_names,
             "has_b5": "b5" in meta.column_names,
             "has_b7": "b7" in meta.column_names,
         }

@@ -9,8 +9,8 @@ schema, and returns a DataFrame ready to append to global_analysis.parquet.
 MICS-specific coding notes
 --------------------------
 - BH5: 1=alive (YES), 2=dead (NO)
-- BH9C: age at death in MIXED units; BH9U gives the unit:
-    1=days, 2=months, 3=years, 9=DK. Must convert to months before use.
+- BH9C: imputed age at death in completed months. BH9N/BH9U retain the
+  source number and unit and must not be used to rescale BH9C.
 - birthint: ordinal category (0=first birth, 1=<2yr, 2=2yr, 3=3yr, 4=4+yr)
     NOT raw months. Map to midpoints for the continuous column.
 - magebrt: ordinal category (1=<20, 2=20-34, 3=35+), NOT raw age.
@@ -43,6 +43,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from config.paths import RNG_SEED  # noqa: F401  (imported for callers)
+from src.data.under5_outcomes import derive_under5_outcomes
 
 # ---------------------------------------------------------------------------
 # Internal helpers
@@ -87,36 +88,22 @@ def _find_member(zf: zipfile.ZipFile, suffix: str) -> Optional[str]:
 
 
 # ---------------------------------------------------------------------------
-# BH9C: convert mixed-unit age-at-death to months
+# BH9C: imputed age-at-death in completed months
 # ---------------------------------------------------------------------------
 
 def _age_at_death_months(df: pd.DataFrame) -> pd.Series:
     """
-    Convert BH9C + BH9U to a single months column.
+    Return MICS' imputed age-at-death variable in completed months.
 
-    BH9U: 1=days, 2=months, 3=years, 9=DK/missing.
-    BH9C is only meaningful when BH5==2 (child died).
-    Days are converted via 1/30.4375 (average month length).
+    BH9N/BH9U store the source response and its unit. BH9C is MICS'
+    standardized/imputed month value, so applying BH9U again would rescale
+    year-reported deaths a second time. BH9C is meaningful only for children
+    reported dead (BH5=2).
     """
-    raw = df["BH9C"].copy()
-    # Replace MICS missing sentinels before arithmetic
-    raw = raw.where(raw >= 0)
-
-    unit = df["BH9U"] if "BH9U" in df.columns else pd.Series(np.nan, index=df.index)
-
-    months = np.where(
-        unit == 1, raw / 30.4375,     # days -> months
-        np.where(
-            unit == 2, raw,            # already months
-            np.where(
-                unit == 3, raw * 12.0, # years -> months
-                np.nan,                # DK / missing unit
-            ),
-        ),
+    months = pd.to_numeric(df["BH9C"], errors="coerce").where(
+        lambda values: values >= 0
     )
-    # Only meaningful for dead children; set alive children to NaN
-    months = np.where(df["BH5"] == 2, months, np.nan)
-    return pd.Series(months, index=df.index, dtype="float64")
+    return months.where(df["BH5"].eq(2)).astype("float64")
 
 
 # ---------------------------------------------------------------------------
@@ -172,17 +159,18 @@ def _map_child_vars(df: pd.DataFrame) -> pd.DataFrame:
     bim = df["birth_interval_months"]
     df["birth_interval_cat"] = np.select(
         [
-            bim.isna() & (df["birth_order"] == 1),
-            bim < 24,
-            bim.between(24, 47, inclusive="both"),
-            bim >= 48,
+            df["birth_order"].eq(1),
+            df["birth_order"].gt(1) & bim.isna(),
+            df["birth_order"].gt(1) & bim.lt(24),
+            df["birth_order"].gt(1) & bim.between(24, 47, inclusive="both"),
+            df["birth_order"].gt(1) & bim.ge(48),
         ],
-        ["First birth", "<24 months", "24-47 months", "48+ months"],
+        [
+            "First birth", "Missing non-first", "<24 months",
+            "24-47 months", "48+ months",
+        ],
         default=None,
     )
-    # Rows where birth_order>1 but interval is NaN get NaN category
-    mask_missing_int = bim.isna() & (df["birth_order"] > 1)
-    df.loc[mask_missing_int, "birth_interval_cat"] = None
     df["birth_interval_cat"] = df["birth_interval_cat"].astype("object")
 
     return df
@@ -275,7 +263,7 @@ def _construct_outcome(df: pd.DataFrame) -> pd.DataFrame:
     Construct died_under5 and age_at_death_months from MICS variables.
 
     BH5=1 (YES/alive), BH5=2 (NO/dead).
-    BH9C + BH9U give age at death in mixed units.
+    BH9C is the imputed age at death in completed months.
     died_under5=1 only if dead AND age_at_death < 60 months.
     """
     df["age_at_death_months"] = _age_at_death_months(df)
@@ -295,6 +283,17 @@ def _construct_outcome(df: pd.DataFrame) -> pd.DataFrame:
             ),
         ),
     )
+
+    alive = pd.Series(pd.NA, index=df.index, dtype="boolean")
+    alive.loc[df["BH5"].eq(1)] = True
+    alive.loc[df["BH5"].eq(2)] = False
+    exact = derive_under5_outcomes(
+        alive=alive,
+        age_at_death_months=df["age_at_death_months"],
+        birth_cmc=df["birth_cmc"],
+        interview_cmc=df["interview_cmc"],
+    )
+    df[exact.columns] = exact
 
     return df
 
@@ -322,6 +321,8 @@ def _construct_temporal_vars(
     df["birth_year"] = (1900.0 + np.floor((dob_cmc - 1.0) / 12.0)).astype("float64")
     df["dob_cmc"] = dob_cmc.astype("float64")
     df["doi_cmc"] = doi_cmc.astype("float64")
+    df["birth_cmc"] = df["dob_cmc"]
+    df["interview_cmc"] = df["doi_cmc"]
 
     # Match DHS harmonization: integer survey-year minus integer birth-year.
     df["years_before_survey"] = (float(survey_year) - df["birth_year"]).astype("float64")
@@ -390,7 +391,10 @@ _OUTPUT_COLS = [
     # Survey design
     "sample_weight", "psu", "stratum",
     # Outcome
-    "died_under5",
+    "died_under5", "birth_cmc", "interview_cmc",
+    "followup_months", "age_at_death_months",
+    "event_time_months", "u5_event", "u5_censored",
+    "u5_binary_eligible", "died_under5_complete",
     # Child factors (raw + categorical)
     "child_male", "multiple_birth",
     "birth_order", "parity_cat",
@@ -549,21 +553,32 @@ def harmonize_mics_survey(
     available = [c for c in _OUTPUT_COLS if c in df.columns]
     df_out = df[available].copy()
 
-    # Validation summary
+    # Validation summary: keep the legacy all-birth recorded-event proportion
+    # visibly separate from the exact complete-cohort binary proportion.
     n_total = len(df_out)
-    n_died = df_out["died_under5"].sum()
-    n_valid = df_out["died_under5"].notna().sum()
-    u5mr = (n_died / n_valid * 1000) if n_valid > 0 else np.nan
+    n_recorded = df_out["died_under5"].sum()
+    n_recorded_valid = df_out["died_under5"].notna().sum()
+    recorded_per1000 = (
+        n_recorded / n_recorded_valid * 1000
+        if n_recorded_valid > 0 else np.nan
+    )
+    n_complete_deaths = df_out["died_under5_complete"].sum()
+    n_complete = df_out["died_under5_complete"].notna().sum()
+    complete_per1000 = (
+        n_complete_deaths / n_complete * 1000 if n_complete > 0 else np.nan
+    )
 
     print(
         f"[MICS] {country_iso3} {survey_year}: "
-        f"{n_total:,} births, U5MR={u5mr:.0f}/1000, "
+        f"{n_total:,} births, recorded-event={recorded_per1000:.0f}/1000, "
+        f"exact-complete={complete_per1000:.0f}/1000 (n={n_complete:,}), "
         f"{len(available)} cols"
     )
 
-    if n_valid > 0 and (u5mr < 5 or u5mr > 500):
+    if n_complete > 0 and (complete_per1000 < 5 or complete_per1000 > 500):
         print(
-            f"[MICS] WARNING: U5MR={u5mr:.0f}/1000 outside plausible range [5, 500]"
+            f"[MICS] WARNING: exact-complete proportion={complete_per1000:.0f}/1000 "
+            "outside plausible range [5, 500]"
         )
 
     return df_out

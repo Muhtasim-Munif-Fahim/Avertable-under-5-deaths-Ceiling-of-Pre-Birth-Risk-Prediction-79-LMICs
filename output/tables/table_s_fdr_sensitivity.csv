@@ -1,4 +1,0 @@
-family,n_tests,raw_sig_p_lt_0.05,bh_sig_q_lt_0.05,lost_to_fdr,max_raw_p
-Pooled Model 3 (21 covariates),21,21,21,0,0.0074
-Regional GEE (region x covariate),104,92,91,1,0.9181
-Per-country aOR (country x determinant),263,228,228,0,1.0

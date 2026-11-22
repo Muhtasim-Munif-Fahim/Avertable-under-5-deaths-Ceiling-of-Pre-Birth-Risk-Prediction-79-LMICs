@@ -1,46 +1,46 @@
-# --- HARD BLOCK: individual-level microdata must never enter this repo ---
+# Hard blocks. This repository backs a journal Data Sharing statement; these
+# patterns must never enter it. The 2026-07-10 build shipped LaTeX and the
+# manuscript pipeline by accident, and the microdata licences forbid the rest.
+
+# --- individual-level microdata: DHS/MICS terms of use forbid redistribution --
 *.parquet
 *.dta
 *.sav
-*.zsav
-*.feather
-*.npy
-*.npz
-data/raw/
-data/00_raw/
-data/01_parquet/
-data/02_harmonized/
-data/logs/
-MICS Data/
+*.sas7bdat
+*.zip
+*.7z
+*.7z.*
 
-# --- HARD BLOCK: paper / LaTeX / manuscript / figure artifacts stay out ---
+# --- manuscript, its LaTeX, and the display layer: out of deposit scope ------
 *.tex
-*.pdf
 *.docx
-output/figures/
-output/tables/journal_main/
-output/tables/journal_supp/
-output/checklists/
+*.pdf
+*.aux
+*.log
+*.out
+*.spl
+*.bbl
+*.toc
+figures/
 src/figures_journal/
-src/synthesis/
+src/synthesis/s12_publication_package.py
+src/synthesis/s13_full_manuscript.py
 
-# Python
+# --- rendered images ---------------------------------------------------------
+*.png
+*.svg
+*.jpg
+*.jpeg
+*.eps
+
+# --- Python ------------------------------------------------------------------
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ipynb_checkpoints/
 .venv/
 venv/
+.pytest_cache/
+.ipynb_checkpoints/
 
-# OS / editor
+# --- OS ----------------------------------------------------------------------
 .DS_Store
 Thumbs.db
-*.swp
-.vscode/
-.idea/
-
-# Logs, temp, archives
-*.log
-tmp/
-*.zip

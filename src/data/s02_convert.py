@@ -50,6 +50,7 @@ REQUIRED_VARIABLES: list[str] = [
     "v003",    # Respondent line number
     "v005",    # Sample weight (divide by 1e6 for proportion)
     "v007",    # Year of interview
+    "v008",    # Date of interview (CMC; exact follow-up contract)
     "v006",    # Month of interview
     "v021",    # Primary sampling unit
     "v022",    # Sample strata for SE estimation
@@ -108,7 +109,6 @@ REQUIRED_VARIABLES: list[str] = [
 
 # Secondary variables: useful if available, not critical
 SECONDARY_VARIABLES: list[str] = [
-    "v008",    # Date of interview (CMC)
     "v010",    # Respondent's year of birth
     "v130",    # Religion
     "v131",    # Ethnicity
@@ -126,6 +126,8 @@ SECONDARY_VARIABLES: list[str] = [
     "m3b",     # Assistance at delivery: nurse/midwife
     "m3n",     # Assistance at delivery: no one
 ]
+
+CRITICAL_FOLLOWUP_COLUMNS = frozenset({"b3", "v008", "b5", "b7"})
 
 
 # ---------------------------------------------------------------------------
@@ -197,6 +199,22 @@ def find_available_columns(
     return found, missing
 
 
+def missing_followup_columns(columns: list[str]) -> list[str]:
+    """Return exact-follow-up fields absent from a raw or converted schema."""
+    available = {str(column).lower() for column in columns}
+    return sorted(CRITICAL_FOLLOWUP_COLUMNS - available)
+
+
+def parquet_has_exact_followup(path: Path) -> bool:
+    """Check the resume artifact before treating conversion as complete."""
+    try:
+        import pyarrow.parquet as pq
+
+        return not missing_followup_columns(pq.read_schema(str(path)).names)
+    except Exception:
+        return False
+
+
 def convert_single_dataset(
     dta_path: Path,
     output_path: Path,
@@ -225,6 +243,14 @@ def convert_single_dataset(
         # Step 1: Read metadata only to discover columns
         _, meta = pyreadstat.read_dta(str(dta_path), metadataonly=True)
         all_cols = meta.column_names
+        missing_exact = missing_followup_columns(all_cols)
+        if missing_exact:
+            logger.error(
+                "  %s: Missing critical exact-follow-up columns: %s",
+                folder_name,
+                missing_exact,
+            )
+            return None
 
         # Step 2: Determine which variables are available
         all_requested = REQUIRED_VARIABLES + SECONDARY_VARIABLES
@@ -338,7 +364,7 @@ def main() -> None:
         out_path = PARQUET_DIR / f"{folder}.parquet"
 
         # Resume support: skip if already converted
-        if out_path.exists():
+        if out_path.exists() and parquet_has_exact_followup(out_path):
             skipped += 1
             logger.info(
                 "[%d/%d] %s — SKIPPED (already exists)",
@@ -349,6 +375,12 @@ def main() -> None:
                 "status": "SKIPPED",
             })
             continue
+        if out_path.exists():
+            logger.warning(
+                "[%d/%d] %s — existing Parquet lacks exact follow-up; "
+                "reconverting",
+                i, len(national), folder,
+            )
 
         logger.info(
             "[%d/%d] %s — converting...",

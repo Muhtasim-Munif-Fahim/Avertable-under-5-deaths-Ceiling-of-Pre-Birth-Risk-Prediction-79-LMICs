@@ -1,0 +1,5 @@
+scope,n_births,n_events,n_countries,n_surveys
+pilot,10669397,889604,79,215
+known_survival,10669385,889604,79,215
+known_survival_positive_weight,10658506,888921,79,215
+analysis_observed_wealth,9960571,801959,77,193

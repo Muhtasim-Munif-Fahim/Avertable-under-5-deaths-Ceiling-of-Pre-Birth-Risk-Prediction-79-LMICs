@@ -1,0 +1,8 @@
+step,joint_paf_pct,delta_from_prev,education_paf_pct,spacing_paf_pct
+Legacy baseline (whole-population shift),47.63,,33.52,20.0
++ policy-eligible counterfactual,42.33,-5.3,33.9,12.33
++ exact >=60-mo outcome cohort,44.04,1.71,35.64,12.51
++ explicit-missing exposure states,44.22,0.19,35.82,12.55
++ survey weights,44.74,0.52,36.42,12.53
++ country/survey fixed effects,33.11,-11.64,22.33,13.42
++ complete-wealth & wave FE (primary),32.2,-0.91,21.38,13.36

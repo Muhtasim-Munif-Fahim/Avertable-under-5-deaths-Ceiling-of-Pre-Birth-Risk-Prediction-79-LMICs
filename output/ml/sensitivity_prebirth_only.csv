@@ -1,3 +1,0 @@
-feature_set,n_features,AUROC_temporal,AUPRC_temporal,AUROC_geographic,AUPRC_geographic
-full,10,0.698,0.1413,0.7153,0.2018
-prebirth_only,6,0.6777,0.1283,0.7067,0.193

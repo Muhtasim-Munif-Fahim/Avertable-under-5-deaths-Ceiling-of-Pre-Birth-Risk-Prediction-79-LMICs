@@ -52,8 +52,11 @@ from config.paths import (
     GLOBAL_PARQUET,
     LOG_DIR,
     OUTPUT_DIR,
+    RAW_MICS_DIR,
     RNG_SEED,
 )
+from src.data.under5_outcomes import EXACT_FOLLOWUP_COLUMNS
+from src.data.country_codes import normalize_country_iso3
 
 # The harmonizer written by the parallel agent.
 # Import is deferred to run time so the pipeline fails with a clear
@@ -80,6 +83,15 @@ def _import_harmonizer():
 #              'b'=bool, 'O'=object/str, 'U'=unicode
 _REQUIRED_COLS: list[tuple[str, tuple[str, ...]]] = [
     ("died_under5",              ("i", "u", "b", "f")),
+    ("birth_cmc",                ("i", "u", "f")),
+    ("interview_cmc",            ("i", "u", "f")),
+    ("followup_months",          ("i", "u", "f")),
+    ("age_at_death_months",      ("i", "u", "f")),
+    ("event_time_months",        ("i", "u", "f")),
+    ("u5_event",                 ("i", "u", "b", "f")),
+    ("u5_censored",              ("i", "u", "b", "f")),
+    ("u5_binary_eligible",       ("i", "u", "b", "f")),
+    ("died_under5_complete",     ("i", "u", "b", "f")),
     ("child_male",               ("i", "u", "f")),
     ("birth_order",              ("i", "u", "f")),
     ("birth_interval_months",    ("i", "u", "f")),
@@ -205,6 +217,25 @@ def validate_mics_schema(df: pd.DataFrame, country_iso3: str) -> list[str]:
     return errors
 
 
+def resolve_mics_zip_path(
+    catalog_row,
+    *,
+    raw_mics_dir: Path = RAW_MICS_DIR,
+) -> Path:
+    """Resolve a MICS archive, tolerating stale absolute catalog paths."""
+    catalog_value = str(catalog_row.get("zip_path", "")).strip()
+    if catalog_value.lower() in {"", "nan", "none"}:
+        catalog_value = ""
+    catalog_path = Path(catalog_value) if catalog_value else None
+    if catalog_path is not None and catalog_path.is_file():
+        return catalog_path
+
+    filename = str(catalog_row.get("zip_filename", "")).strip()
+    if filename.lower() in {"", "nan", "none"}:
+        raise ValueError("MICS catalog row has no usable zip filename")
+    return Path(raw_mics_dir) / filename
+
+
 # ---------------------------------------------------------------------------
 # Column alignment: conform MICS DataFrame to canonical parquet schema
 # ---------------------------------------------------------------------------
@@ -223,6 +254,15 @@ def align_to_canonical(df: pd.DataFrame, canonical_cols: list[str]) -> pd.DataFr
     - Columns in df but absent in canonical_cols -> dropped silently.
     - Column order matches canonical_cols exactly.
     """
+    missing_exact = [
+        column for column in EXACT_FOLLOWUP_COLUMNS if column not in canonical_cols
+    ]
+    if missing_exact:
+        raise ValueError(
+            "canonical schema lacks exact follow-up fields: "
+            f"{missing_exact}. Rebuild DHS canonical output before MICS append."
+        )
+
     for col in canonical_cols:
         if col not in df.columns:
             df[col] = np.nan
@@ -268,7 +308,8 @@ def get_existing_countries(parquet_path: Path) -> set[str]:
 
     import pyarrow.compute as pc
     unique = pc.unique(col).to_pylist()
-    return {str(c) for c in unique if c is not None}
+    normalized = {normalize_country_iso3(value) for value in unique}
+    return {value for value in normalized if value is not None}
 
 
 # ---------------------------------------------------------------------------
@@ -430,9 +471,6 @@ def run_mics_pipeline(
         year      = row.get("survey_year", None)
         mics_rnd  = row.get("mics_round", None)
         zip_file  = str(row.get("zip_filename", "")).strip()
-        # Prefer the absolute zip_path from the catalog; fall back to filename for
-        # legacy catalogs that did not include the column.
-        zip_full  = str(row.get("zip_path", "")).strip() or zip_file
         who_rgn   = str(row.get("who_region", "")).strip()
 
         manifest_entry: dict = {
@@ -441,8 +479,11 @@ def run_mics_pipeline(
             "mics_round":      mics_rnd,
             "zip_filename":    zip_file,
             "n_births":        0,
-            "n_died_under5":   0,
-            "u5m_proportion":  np.nan,
+            "n_recorded_u5_events": 0,
+            "recorded_u5_event_proportion": np.nan,
+            "n_complete_binary": 0,
+            "n_complete_u5_deaths": 0,
+            "complete_u5_proportion": np.nan,
             "status":          "pending",
         }
 
@@ -462,6 +503,7 @@ def run_mics_pipeline(
         )
 
         try:
+            zip_full = str(resolve_mics_zip_path(row))
             df_survey = harmonize_mics_survey(
                 zip_path=zip_full,
                 country_iso3=iso3,
@@ -501,23 +543,39 @@ def run_mics_pipeline(
         df_aligned = align_to_canonical(df_survey, canonical_cols)
 
         n_births   = len(df_aligned)
-        d5_col     = df_aligned.get("died_under5", pd.Series(dtype=float))
-        n_died     = int(d5_col.sum(skipna=True))
-        n_valid    = int(d5_col.notna().sum())
-        u5m_prop   = (n_died / n_valid) if n_valid > 0 else np.nan
+        recorded_col = df_aligned["died_under5"]
+        n_recorded = int(recorded_col.sum(skipna=True))
+        n_recorded_valid = int(recorded_col.notna().sum())
+        recorded_prop = (
+            n_recorded / n_recorded_valid if n_recorded_valid > 0 else np.nan
+        )
+        complete_col = df_aligned["died_under5_complete"]
+        n_complete_deaths = int(complete_col.sum(skipna=True))
+        n_complete = int(complete_col.notna().sum())
+        complete_prop = (
+            n_complete_deaths / n_complete if n_complete > 0 else np.nan
+        )
 
         manifest_entry.update({
             "n_births":       n_births,
-            "n_died_under5":  n_died,
-            "u5m_proportion": round(u5m_prop, 6) if np.isfinite(u5m_prop) else np.nan,
+            "n_recorded_u5_events": n_recorded,
+            "recorded_u5_event_proportion": (
+                round(recorded_prop, 6) if np.isfinite(recorded_prop) else np.nan
+            ),
+            "n_complete_binary": n_complete,
+            "n_complete_u5_deaths": n_complete_deaths,
+            "complete_u5_proportion": (
+                round(complete_prop, 6) if np.isfinite(complete_prop) else np.nan
+            ),
             "status":         "success",
         })
         manifest_rows.append(manifest_entry)
 
         mics_dfs.append(df_aligned)
         logger.info(
-            "  [%s year=%s] %d births, U5M=%.4f",
-            iso3, year, n_births, u5m_prop if np.isfinite(u5m_prop) else float("nan"),
+            "  [%s year=%s] %d births, exact-complete proportion=%.4f",
+            iso3, year, n_births,
+            complete_prop if np.isfinite(complete_prop) else float("nan"),
         )
 
         del df_survey, df_aligned
@@ -730,8 +788,11 @@ def _write_manifest(manifest_rows: list[dict]) -> None:
         "mics_round",
         "zip_filename",
         "n_births",
-        "n_died_under5",
-        "u5m_proportion",
+        "n_recorded_u5_events",
+        "recorded_u5_event_proportion",
+        "n_complete_binary",
+        "n_complete_u5_deaths",
+        "complete_u5_proportion",
         "status",
     ])
     manifest_df.to_csv(manifest_path, index=False)

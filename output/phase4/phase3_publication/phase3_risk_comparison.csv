@@ -1,0 +1,3 @@
+estimand,estimate,n_births,label
+weighted_km_60_month_risk_same_cohort,0.08393768670169366,9960571,Nonparametric weighted risk on Phase 3 analytic cohort
+model_standardized_60_month_risk,0.0830784955086448,9960571,Birth-period-adjusted pooled-logistic standardisation

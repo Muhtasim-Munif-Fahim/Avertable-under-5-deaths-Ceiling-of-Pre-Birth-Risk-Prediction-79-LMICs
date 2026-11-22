@@ -1,0 +1,2 @@
+surface,role,n_births,n_countries,n_surveys,n_deaths,weight_sum,weight_effective_sample_size,n_zero_event_waves,n_waves_fewer_than_5_events,n_features,converged,n_iter,rank_deficient,condition_number,primary_eligible,warning,features
+exact_wave_fe_complete_wealth,primary_observed_wealth,7652332,77,193,679059,7658239.800489,4371854.175902826,0,0,227,True,308,False,284474553.7450125,True,,"[""sex_cat"", ""birth_type"", ""bo_cat"", ""bi_model_cat"", ""ma_cat"", ""edu_cat"", ""marital_cat"", ""urban_cat"", ""birth_period"", ""wq_cat"", ""survey_id""]"

@@ -1,6 +1,7 @@
 # Python 3.11+ required
 pandas>=2.3.0
 numpy>=2.3.0
+numba>=0.65.0
 scikit-learn>=1.5.0
 scipy>=1.15.0
 matplotlib>=3.10.0

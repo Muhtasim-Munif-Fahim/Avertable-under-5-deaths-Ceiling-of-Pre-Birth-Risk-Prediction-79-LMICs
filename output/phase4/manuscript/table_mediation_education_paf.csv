@@ -1,0 +1,4 @@
+estimand,paf_pct
+education_PAF_wealth_adjusted (primary),21.38
+education_PAF_total_effect (no wealth mediator),28.51
+mediated_by_wealth (difference),7.13

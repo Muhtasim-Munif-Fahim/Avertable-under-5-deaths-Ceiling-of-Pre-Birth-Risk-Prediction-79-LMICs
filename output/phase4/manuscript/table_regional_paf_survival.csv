@@ -1,0 +1,16 @@
+region,scenario,n_countries,paf_pct,ci_lo,ci_hi
+ECA,education,8,2.25,0.41,6.11
+ECA,joint,8,15.76,12.29,17.94
+ECA,spacing,8,13.8,9.72,15.59
+LAC,education,8,16.48,13.19,19.7
+LAC,joint,8,27.67,23.89,31.17
+LAC,spacing,8,13.49,11.96,15.33
+MENA,education,7,12.25,2.41,19.74
+MENA,joint,7,27.21,21.4,31.63
+MENA,spacing,7,16.82,13.48,20.54
+SSA,education,38,21.62,18.31,23.75
+SSA,joint,38,31.49,28.02,33.72
+SSA,spacing,38,12.32,11.14,13.45
+SSEA,education,16,19.61,16.0,21.3
+SSEA,joint,16,30.08,25.48,32.46
+SSEA,spacing,16,13.12,10.7,15.27

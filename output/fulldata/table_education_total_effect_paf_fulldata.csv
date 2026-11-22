@@ -1,2 +1,0 @@
-estimand,adjustment,PAF_pct,CI_lo,CI_hi,n_boot,primary_mediator_adjusted_PAF
-Education total-effect PAF (confounder-only),male+is_multiple+age_under20+age_over35+married+decade_2010+decade_2020+edu_primary+edu_secondary+edu_higher,42.88,35.36,45.1,500,37.5

@@ -1,0 +1,15 @@
+quantity,estimand,basis,value,ci_low,ci_high,unit
+Joint PAF (global),survival (PRIMARY),"discrete-time survival, full birth history",30.47,27.47,32.11,percent
+Joint PAF (global),exact-binary (sensitivity),>=60-mo exact-binary G-computation,32.2,29.78,33.64,percent
+Avertable deaths per year (UN-IGME 2024),survival (PRIMARY),"survival global PAF x 4,282,677 mapped IGME 2024 U5 deaths (77 countries)",1305079.0,1176555,1374974,deaths/year
+Avertable deaths per year (UN-IGME 2024),"exact-binary, flat","binary global PAF x 4,282,677 mapped IGME 2024 U5 deaths",1378835.0,1275448,1440741,deaths/year
+Avertable deaths per year (UN-IGME 2024),"survival, per-country decomposition",sum of per-country survival joint PAF x per-country IGME 2024 deaths (GEOGRAPHIC BASIS),1339789.0,,,deaths/year (effective 31.3%)
+Avertable deaths per year (UN-IGME 2024),"exact-binary, per-country decomposition (sensitivity)",sum of per-country binary joint PAF x per-country IGME 2024 deaths,1405179.0,,,deaths/year (effective 32.8%)
+Avertable deaths (cohort-anchored),survival (PRIMARY),"of 679,059 recorded deaths in the complete-wealth cohort",206933.0,,,deaths
+Avertable deaths (cohort-anchored),exact-binary (sensitivity),"of 679,059 recorded deaths in the complete-wealth cohort",218627.0,,,deaths
+"SDG 3.2 countries reaching <=25/1,000",factual (observed),77 countries with IGME 2024 U5MR,23.0,,,countries
+"SDG 3.2 countries reaching <=25/1,000","counterfactual, survival (GEOGRAPHIC BASIS)",per-country survival joint PAF applied to per-country IGME 2024 U5MR,34.0,,,countries
+"SDG 3.2 countries reaching <=25/1,000","counterfactual, exact-binary (sensitivity)",per-country binary joint PAF applied to per-country IGME 2024 U5MR,34.0,,,countries
+"Joint PAF (global, 2018-2024 exposure mix)","survival (PRIMARY, contemporary)",survival surface re-standardised to recent exposure prevalence,25.11,22.35,27.3,percent
+"Avertable deaths per year (UN-IGME 2024, contemporary)","survival (PRIMARY, contemporary)","contemporary survival PAF x 4,282,677 mapped IGME 2024 U5 deaths (77 countries)",1075380.0,957178,1169171,deaths/year
+"Joint PAF (global, 2018-2024 exposure mix)","exact-binary (sensitivity, contemporary)",binary surface re-standardised to recent exposure prevalence,26.39,23.98,28.23,percent

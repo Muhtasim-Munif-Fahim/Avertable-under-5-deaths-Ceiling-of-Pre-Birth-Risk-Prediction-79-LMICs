@@ -1,0 +1,13 @@
+axis,ablation,label,n_births,paf_education,paf_joint,paf_spacing,delta_joint_vs_primary
+adjustment set,drop_child,"Child block dropped (sex, multiple birth, birth order)",7652332,21.9,31.9,12.41,-0.3
+adjustment set,drop_marital,Marital status dropped,7652332,21.33,32.16,13.36,-0.04
+adjustment set,drop_residence,Urban/rural residence dropped,7652332,21.52,32.33,13.36,0.13
+adjustment set,drop_maternal_age,Maternal age block dropped,7652332,22.28,33.26,13.7,1.06
+adjustment set,drop_birth_period,Birth-period block dropped,7652332,26.13,36.5,13.58,4.3
+adjustment set,drop_wealth,Household wealth dropped (education fraction becomes total-effect),7652332,28.51,38.45,13.41,6.25
+counterfactual contract,edu_to_primary,Education: no schooling raised to primary only,7652332,6.09,18.74,13.36,-13.46
+counterfactual contract,spacing_eligible_lt12,Spacing: only intervals <12 mo shifted,7652332,21.38,22.47,1.35,-9.73
+counterfactual contract,spacing_eligible_lt18,Spacing: only intervals <18 mo shifted,7652332,21.38,26.01,5.72,-6.19
+counterfactual contract,primary,Primary contract (to secondary; intervals <24 mo to 24-47 mo),7652332,21.38,32.2,13.36,0.0
+counterfactual contract,spacing_to_48,Spacing: intervals <24 mo raised to 48+ mo,7652332,21.38,37.31,19.86,5.11
+counterfactual contract,edu_to_higher,Education: below higher raised to higher,7652332,37.37,46.23,13.36,14.03

@@ -1,9 +1,0 @@
-risk_factor,variable,all_records,fully_exposed,delta_pp
-Birth interval != 24-47mo -> 24-47mo,bi_cat,20.81,21.22,0.4
-Education < Secondary -> Secondary+,edu_cat,37.5,38.28,0.8
-Male -> Female,sex_cat,5.76,5.41,-0.3
-Maternal age != 20-34 -> 20-34,ma_cat,9.43,10.16,0.7
-Multiple -> Singleton,birth_type,5.11,4.79,-0.3
-Rural -> Urban,urban_cat,11.34,11.77,0.4
-Unmarried -> Married,marital_cat,1.55,1.33,-0.2
-Wealth < Richest -> Richest,wq_cat,9.79,11.56,1.8

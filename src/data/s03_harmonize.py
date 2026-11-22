@@ -57,6 +57,7 @@ sys.path.insert(
 from config.paths import (
     PARQUET_DIR, HARMONIZED_DIR, LOG_DIR,
 )
+from src.data.under5_outcomes import derive_under5_outcomes
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -265,6 +266,21 @@ def construct_outcome(df: pd.DataFrame) -> pd.DataFrame:
         ),
         0,  # b5 == 1 -> alive -> did not die under 5
     )
+
+    df["birth_cmc"] = pd.to_numeric(df["b3"], errors="coerce")
+    df["interview_cmc"] = pd.to_numeric(df["v008"], errors="coerce")
+    df["age_at_death_months"] = pd.to_numeric(df["b7"], errors="coerce")
+
+    alive = pd.Series(pd.NA, index=df.index, dtype="boolean")
+    alive.loc[df["b5"].eq(1)] = True
+    alive.loc[df["b5"].eq(0)] = False
+    exact = derive_under5_outcomes(
+        alive=alive,
+        age_at_death_months=df["age_at_death_months"],
+        birth_cmc=df["birth_cmc"],
+        interview_cmc=df["interview_cmc"],
+    )
+    df[exact.columns] = exact
     return df
 
 
@@ -294,13 +310,18 @@ def construct_child_features(df: pd.DataFrame) -> pd.DataFrame:
 
     # birth_interval_cat: categorical (consumes the cleaned values above)
     bim = df["birth_interval_months"]
+    birth_order = df["birth_order"]
     conditions = [
-        bim.isna(),       # First birth (no preceding interval)
-        bim < 24,         # Short interval
-        bim.between(24, 47, inclusive="both"),
-        bim >= 48,        # Long interval
+        birth_order.eq(1),
+        birth_order.gt(1) & bim.isna(),
+        birth_order.gt(1) & bim.lt(24),
+        birth_order.gt(1) & bim.between(24, 47, inclusive="both"),
+        birth_order.gt(1) & bim.ge(48),
     ]
-    choices = ["First birth", "<24 months", "24-47 months", "48+ months"]
+    choices = [
+        "First birth", "Missing non-first", "<24 months",
+        "24-47 months", "48+ months",
+    ]
     df["birth_interval_cat"] = np.select(
         conditions, choices, default="_missing"
     )
@@ -560,7 +581,7 @@ _RAW_COLS_NEEDED = {
     # Identity / survey design
     "v000", "v007", "v005", "v001", "v021", "v022", "v023",
     # Outcome
-    "b5", "b7",
+    "b3", "b5", "b7", "v008",
     # Birth record
     "b2", "b4", "b0", "bord", "b11",
     # Maternal demographics
@@ -574,6 +595,7 @@ _RAW_COLS_NEEDED = {
     # Household
     "v136", "v445",
 }
+_CRITICAL_FOLLOWUP_RAW_COLS = {"b3", "v008", "b5", "b7"}
 
 
 def process_single_survey(
@@ -594,6 +616,11 @@ def process_single_survey(
         # (India NFHS ~1.3M rows; reading all 200+ DHS cols OOMs)
         import pyarrow.parquet as _pq_local
         file_cols = set(_pq_local.read_schema(str(parquet_path)).names)
+        missing_followup = sorted(_CRITICAL_FOLLOWUP_RAW_COLS - file_cols)
+        if missing_followup:
+            raise ValueError(
+                f"missing exact-follow-up fields {missing_followup}"
+            )
         cols_to_read = list(_RAW_COLS_NEEDED & file_cols)
         df = pd.read_parquet(parquet_path, columns=cols_to_read)
         n_raw = len(df)
@@ -679,7 +706,10 @@ def process_single_survey(
             # Survey design
             "sample_weight", "psu", "stratum",
             # Outcome
-            "died_under5",
+            "died_under5", "birth_cmc", "interview_cmc",
+            "followup_months", "age_at_death_months",
+            "event_time_months", "u5_event", "u5_censored",
+            "u5_binary_eligible", "died_under5_complete",
             # Child factors (raw + categorical)
             "child_male", "multiple_birth",
             "birth_order", "parity_cat",
@@ -853,7 +883,10 @@ _INT16_COLS = ["birth_order", "survey_year"]
 _FLOAT32_COLS = [
     "birth_year", "years_before_survey", "is_recent_birth",
     "sample_weight", "psu", "stratum",
-    "died_under5", "birth_interval_months",
+    "died_under5", "birth_cmc", "interview_cmc",
+    "followup_months", "age_at_death_months", "event_time_months",
+    "u5_event", "u5_censored", "u5_binary_eligible",
+    "died_under5_complete", "birth_interval_months",
     "maternal_age_survey", "maternal_age_at_birth",
     "edu_level", "currently_married",
     "wealth_quintile", "urban",

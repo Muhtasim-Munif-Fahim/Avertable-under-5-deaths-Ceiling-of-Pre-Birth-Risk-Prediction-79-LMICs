@@ -1,37 +1,45 @@
 cff-version: 1.2.0
-message: "If you use this code or the derived aggregate data, please cite it as below."
-title: "Global Under-5 Mortality Risk Stratification — analysis code and derived data (79 LMICs, DHS/MICS 2000–2024)"
+message: "If you use this software, please cite both the software and the article."
+title: "Analysis code for: maternal education, birth spacing, and under-5 mortality in 77 low- and middle-income countries"
+abstract: >-
+  Harmonisation and estimation code for a pooled analysis of 215 DHS and UNICEF
+  MICS surveys across 79 low-income and middle-income countries, 2000-2024.
+  Covers survey-weighted logistic and discrete-time survival surfaces,
+  g-computation population attributable fractions under policy-eligible
+  counterfactual shifts, Wagstaff decomposition of wealth-related inequality,
+  and an estimand-shift decomposition benchmarking the conventional pooled
+  approach. Individual-level microdata are not redistributable and are not
+  included.
 type: software
+version: 2.1.0
+date-released: 2026-11-21
+license: MIT
 authors:
   - family-names: Fahim
     given-names: Md Muhtasim Munif
-    affiliation: "Data Science Research Lab, Department of Statistics, University of Rajshahi, Bangladesh"
-  - family-names: Huq
-    given-names: M. Monimul
-    affiliation: "Department of Statistics, University of Rajshahi, Bangladesh"
-  - family-names: Sabiruzzaman
-    given-names: M.
-    affiliation: "Department of Statistics, University of Rajshahi, Bangladesh"
+    affiliation: "Data Science Research Lab, Department of Statistics and Data Science, University of Rajshahi"
   - family-names: Karim
     given-names: Md Rezaul
-    affiliation: "Department of Statistics, University of Rajshahi, Bangladesh"
-repository-code: "https://github.com/Muhtasim-Munif-Fahim/Avertable-under-5-deaths-Ceiling-of-Pre-Birth-Risk-Prediction-79-LMICs"
-license: MIT
-doi: 10.5281/zenodo.21302199
-version: 1.0.0
-date-released: 2026-07-10
-preferred-citation:
-  type: article
-  title: "Avertable under-5 deaths and the ceiling of pre-birth risk prediction in 79 low-income and middle-income countries: a harmonised DHS and MICS analysis"
-  authors:
-    - family-names: Fahim
-      given-names: Md Muhtasim Munif
-    - family-names: Huq
-      given-names: M. Monimul
-    - family-names: Sabiruzzaman
-      given-names: M.
-    - family-names: Karim
-      given-names: Md Rezaul
-  journal: "The Lancet Global Health"
-  year: 2026
-  notes: "Submitted; citation details to be updated on publication."
+    affiliation: "Data Science Research Lab, Department of Statistics and Data Science, University of Rajshahi"
+    email: mrkarim@ru.ac.bd
+keywords:
+  - under-five mortality
+  - population attributable fraction
+  - g-computation
+  - maternal education
+  - birth spacing
+  - health inequality
+  - Demographic and Health Surveys
+  - Multiple Indicator Cluster Surveys
+repository-code: "https://github.com/Muhtasim-Munif-Fahim/Child_PVT"
+references:
+  - type: article
+    title: >-
+      Maternal Education, Birth Spacing, and Under-5 Mortality in 77 Low- and
+      Middle-Income Countries: A Joint Counterfactual Analysis of Attributable Burden
+    authors:
+      - family-names: Fahim
+        given-names: Md Muhtasim Munif
+      - family-names: Karim
+        given-names: Md Rezaul
+    status: submitted

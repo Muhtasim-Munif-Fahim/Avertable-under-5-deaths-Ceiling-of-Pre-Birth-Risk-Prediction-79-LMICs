@@ -1,0 +1,6 @@
+quantity,value,lo,hi,source
+Contemporary joint PAF (survival primary),25.11,22.35,27.3,"bootstrap (B=1000), PAF uncertainty only"
+"UN-IGME 2024 under-5 deaths, 77 crosswalked countries",4282677.0,3412475.0,5457917.0,"UN-IGME published 90% uncertainty interval, summed across countries"
+"Avertable deaths/year, PAF uncertainty only (as previously reported)",1075380.0,957178.0,1169171.0,PAF bootstrap CI x fixed IGME point estimate
+"Avertable deaths/year, PAF + IGME uncertainty, independent regime",1075380.0,797560.0,1353201.0,"relative SEs combined in quadrature (Gaussian approx, 90% level)"
+"Avertable deaths/year, PAF + IGME uncertainty, comonotonic regime",1075380.0,762688.0,1490011.0,"explicit worst case: both bounds hit simultaneously, not a probability interval"

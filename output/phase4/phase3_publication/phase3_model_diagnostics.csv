@@ -1,0 +1,2 @@
+surface,n_births,n_events,n_countries,n_surveys,n_grouped_cells,n_model_rows,n_features,likelihood_backend,scaled_objective,max_abs_scaled_gradient,converged,n_iter,rank_deficient,condition_number,warning
+full_followup_discrete_time_observed_wealth,9960571,801959,77,193,60285923,60802765,287,cuda-torch-float64,0.009100954837358717,9.162740833428647e-09,True,57,False,548067233.8770105,

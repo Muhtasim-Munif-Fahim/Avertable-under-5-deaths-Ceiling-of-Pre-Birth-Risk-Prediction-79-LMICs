@@ -1,0 +1,4 @@
+surface,role,contract,scenario,n_births,n_modified,factual_risk,counterfactual_risk,risk_difference_per_1000,risk_ratio,paf_pct,n_risk_increased,max_risk_increase,same_surface_identity_max_abs_error,converged,publication_eligible
+exact_wave_fe_complete_wealth,primary_observed_wealth,policy_eligible,education,7652332,5257061,0.08910216207479403,0.07005885738371045,19.043304691083577,0.7862756161281668,21.37243838718332,0,0.0,,True,True
+exact_wave_fe_complete_wealth,primary_observed_wealth,policy_eligible,spacing,7652332,1680293,0.08910216207479403,0.07720015410507969,11.902007969714342,0.8664229049826695,13.357709501733048,0,0.0,,True,True
+exact_wave_fe_complete_wealth,primary_observed_wealth,policy_eligible,joint,7652332,5688181,0.08910216207479403,0.060415154744967565,28.687007329826464,0.6780436449370774,32.19563550629226,0,0.0,0.0,True,True

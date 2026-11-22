@@ -1,0 +1,11 @@
+metric_type,surface,contract,scenario,point_estimate,ci_lower,ci_upper,n_success,n_requested,success_fraction
+model_factual_risk,exact_wave_fe_complete_wealth,factual,factual,0.08910216207479403,0.07574167558048217,0.11073443017217512,1000,1000,1.0
+paf_pct,exact_wave_fe_complete_wealth,policy_eligible,education,21.37243838718332,19.00018423550377,22.867658367331117,1000,1000,1.0
+paf_pct,exact_wave_fe_complete_wealth,policy_eligible,joint,32.19563550629226,29.781562177006503,33.64113517274641,1000,1000,1.0
+paf_pct,exact_wave_fe_complete_wealth,policy_eligible,spacing,13.357709501733048,11.990195920593075,14.751279919573582,1000,1000,1.0
+risk_difference_per_1000,exact_wave_fe_complete_wealth,policy_eligible,education,19.043304691083577,15.536215169979428,24.138205119808585,1000,1000,1.0
+risk_difference_per_1000,exact_wave_fe_complete_wealth,policy_eligible,joint,28.687007329826464,24.47847279282868,35.465612577440666,1000,1000,1.0
+risk_difference_per_1000,exact_wave_fe_complete_wealth,policy_eligible,spacing,11.902007969714342,10.694002110814612,13.937708910631484,1000,1000,1.0
+risk_ratio,exact_wave_fe_complete_wealth,policy_eligible,education,0.7862756161281668,0.7713234163266889,0.8099981576449623,1000,1000,1.0
+risk_ratio,exact_wave_fe_complete_wealth,policy_eligible,joint,0.6780436449370774,0.663588648272536,0.702184378229935,1000,1000,1.0
+risk_ratio,exact_wave_fe_complete_wealth,policy_eligible,spacing,0.8664229049826695,0.8524872008042641,0.8800980407940693,1000,1000,1.0

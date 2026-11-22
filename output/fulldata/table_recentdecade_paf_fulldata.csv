@@ -1,3 +1,0 @@
-risk_factor,PAF_pooled_recomputed,PAF_pooled_canonical,PAF_recent_prevalence,delta_recent_minus_pooled,recent_cohort,n_recent,pct_below_secondary_pooled,pct_below_secondary_recent,pct_short_interval_pooled,pct_short_interval_recent,PAF_pooled_CI,PAF_recent_CI,delta_CI,PAF_recent_fmt
-Education < Secondary -> Secondary+,37.5,37.5 (32.6-43.1),30.4,-7.1,2018-2024 births,395052,67.5,50.5,20.8,14.7,(30.01–40.56),(24.81–37.03),(-8.48–-1.13),30.4 (24.81–37.03)
-Birth interval != 24-47mo -> 24-47mo,20.81,20.8 (17.4-23.7),14.25,-6.55,2018-2024 births,395052,67.5,50.5,20.8,14.7,(15.67–23.15),(8.68–16.45),(-8.13–-5.37),14.25 (8.68–16.45)

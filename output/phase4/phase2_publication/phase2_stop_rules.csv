@@ -1,0 +1,7 @@
+rule_id,decision_class,value,threshold,triggered,evaluable
+point_model_valid,METHOD_FAILURE,converged=True;rank_deficient=False,converged and full rank,False,True
+bootstrap_replicates_requested,METHOD_FAILURE,1000,>=1000 for publication,False,True
+paired_bootstrap_success,METHOD_FAILURE,1000,>=950,False,True
+hazard_and_risk_validity,METHOD_FAILURE,0,0 non-finite or out-of-bounds risks,False,True
+counterfactual_monotonicity,METHOD_FAILURE,0,0 eligible records with increased risk,False,True
+joint_same_surface_identity,METHOD_FAILURE,0.0,<=1e-12,False,True
